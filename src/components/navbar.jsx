@@ -39,7 +39,7 @@ export default function Prueba() {
 
           <button
             onClick={toggleModal}
-            className="flex items-center text-purple-700"
+            className="flex items-center text-[#773bd4]"
           >
             <h2 className="text-[16px] sm:text-[18px] pr-4 uppercase text-white">
               Menú
@@ -71,7 +71,7 @@ export default function Prueba() {
 
               <button
                 onClick={toggleModal}
-                className="text-white bg-purple-700 p-2 rounded-full"
+                className="text-white bg-gl-purple p-2 rounded-full"
                 aria-label="Cerrar"
               >
                 <svg
@@ -93,7 +93,7 @@ export default function Prueba() {
           </section>
           {/* END MOBILE HEADER */}
           {/* NAVIGATION */}
-          <nav className="flex flex-col items-center justify-center mx-auto w-full max-w-[1080px] px-4">
+          <nav className="flex flex-col items-center justify-center mx-auto w-full max-w-[1080px] px-4 py-4">
             {[
               "Quienes somos",
               "Liderazgo",
@@ -105,12 +105,12 @@ export default function Prueba() {
               <a
                 key={index}
                 href="#"
-                className="w-full pb-4 text-[1.8rem] sm:text-[4rem] sm:hover:text-sky-700 transition duration-300 ease-in-out flex items-center"
+                className="w-full pb-4 text-[1.8rem] sm:text-[4rem] hover:text-gl-sky transition duration-300 ease-in-out flex items-center"
                 onMouseEnter={() => handleMouseEnter(index)}
                 onMouseLeave={handleMouseLeave}
               >
                 <span
-                  className={`bg-sky-700 h-10 block transition-all duration-300 
+                  className={`bg-gl-sky text-gl-sky h-10 block transition-all duration-300 
                     ${hoveredLink === index && "sm:w-16 sm:mr-3"} 
                     ${hoveredLink !== index && "sm:w-0 sm:mr-0"}`}
                 ></span>

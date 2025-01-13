@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --gl-purple: #773bd4;
+    --gl-purple1: #4c3176;
+    --gl-purple2: #603176;
+    --gl-purple3: #8421ad;
+
+    --gl-pink: #c636a2;
+    --gl-pink1: #a61682;
+
+    --gl-blue: #10008f;
+    --gl-blue1: #3421c8;
+
+    --gl-sky: #2d75ab;
+    --gl-sky1: #5aaabf;
+
+    --gl-red: #c80b22;
+  }
+}
