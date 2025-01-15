@@ -23,6 +23,9 @@ module.exports = {
 
         "gr-red": "var(--gl-red)",
       },
+      screens: {
+        xs: "320px",
+      },
     },
   },
   plugins: [],

@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
+//Importar las imagenes:
+import logo from "../static/img/logo.png";
 
-export default function Prueba() {
+export default function Navbar() {
   //Afecta a la apertura y cierre del Menú:
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -29,21 +31,19 @@ export default function Prueba() {
 
   return (
     <>
-      <section className="bg-black bg-opacity-100 flex h-32 items-center justify-between fixed w-full z-40 px-4">
-        <div className="mx-auto flex w-full max-w-[1080px] items-center justify-between">
+      <section className="fixed z-40 flex h-32 w-full items-center justify-between bg-black bg-opacity-100 px-4">
+        <div className="mx-auto flex w-full max-w-[1080px] items-center justify-between sm:max-w-[800px]">
           <img
-            className="w-full max-w-[118px] sm:max-w-32"
-            src="src/static/img/logo.png"
+            className="sm:max-w-max-w-[118px] w-full max-w-28"
+            src={logo}
             alt="Logo 50&50gl"
           />
 
           <button
             onClick={toggleModal}
-            className="flex items-center text-[#773bd4]"
+            className="flex items-center text-gl-purple"
           >
-            <h2 className="text-[16px] sm:text-[18px] pr-4 uppercase text-white">
-              Menú
-            </h2>
+            <h2 className="pr-4 text-[16px] uppercase text-white">Menú</h2>
             <svg
               className="block h-5 w-5 fill-current"
               viewBox="0 0 20 20"
@@ -59,24 +59,26 @@ export default function Prueba() {
 
       {/* MOBILE MODAL NAV */}
       {isModalOpen && (
-        <div className="fixed w-full h-screen bg-white z-50">
+        <div className="fixed z-50 h-screen w-full overflow-y-auto bg-white">
+          {" "}
+          {/* Añadido overflow-y-auto */}
           {/* MOBILE HEADER */}
-          <section className="flex justify-between h-32 sm:px-0 px-4">
-            <div className="mx-auto flex w-full max-w-[1096px] items-center justify-between">
+          <section className="flex h-32 justify-between px-4">
+            <div className="mx-auto flex w-full max-w-[1096px] items-center justify-between sm:max-w-[800px]">
               <img
                 className="w-full max-w-[118px] sm:max-w-32"
                 src="src/static/img/logo.png"
                 alt="Logo 50&50gl"
               />
-
+              {/* MOBILE CLOSE ICON */}
               <button
                 onClick={toggleModal}
-                className="text-white bg-gl-purple p-2 rounded-full"
+                className="rounded-full bg-gl-purple p-2 text-white"
                 aria-label="Cerrar"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
+                  className="h-5 w-5"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -89,11 +91,12 @@ export default function Prueba() {
                   />
                 </svg>
               </button>
+              {/* END MOBILE CLOSE ICON */}
             </div>
           </section>
           {/* END MOBILE HEADER */}
           {/* NAVIGATION */}
-          <nav className="flex flex-col items-center justify-center mx-auto w-full max-w-[1080px] px-4 py-4">
+          <nav className="mx-auto flex w-full max-w-[1080px] flex-col items-center justify-center px-4 py-4 sm:max-w-[800px]">
             {[
               "Quienes somos",
               "Liderazgo",
@@ -105,20 +108,20 @@ export default function Prueba() {
               <a
                 key={index}
                 href="#"
-                className="w-full pb-4 text-[1.8rem] sm:text-[4rem] hover:text-gl-sky transition duration-300 ease-in-out flex items-center"
+                className="xs:text-[2rem] xs:pb-2 flex w-full items-center transition duration-300 ease-in-out hover:text-gl-sky sm:text-[3.5rem] md:text-[4rem]"
                 onMouseEnter={() => handleMouseEnter(index)}
                 onMouseLeave={handleMouseLeave}
               >
                 <span
-                  className={`bg-gl-sky text-gl-sky h-10 block transition-all duration-300 
-                    ${hoveredLink === index && "sm:w-16 sm:mr-3"} 
-                    ${hoveredLink !== index && "sm:w-0 sm:mr-0"}`}
+                  className={`block h-10 bg-gl-sky text-gl-sky transition-all duration-300 ${
+                    hoveredLink === index ? "lg:mr-3 lg:w-16" : "lg:mr-0 lg:w-0"
+                  }`}
                 ></span>
                 <span>{text}</span>
               </a>
             ))}
           </nav>
-          {/*END NAVIGATION */}
+          {/* END NAVIGATION */}
         </div>
       )}
       {/* END MOBILE MODAL NAV */}
