@@ -22,6 +22,16 @@ module.exports = {
         "gl-sky1": "var(--gl-sky1)",
 
         "gr-red": "var(--gl-red)",
+
+        facebook: "var(--facebook)",
+        linkedin: "var(--linkedin)",
+        tiktok: "var(--tiktok)",
+        x: "var(--x)",
+        youtube: "var(--youtube)",
+      },
+      backgroundImage: {
+        "cabecera-home": "url('static/img/cabecera.jpg')",
+        instagram: "var(--instagram)",
       },
       screens: {
         xs: "320px",

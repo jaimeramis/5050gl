@@ -31,7 +31,7 @@ export default function Navbar() {
 
   return (
     <>
-      <section className="fixed z-40 flex h-32 w-full items-center justify-between bg-black bg-opacity-100 px-4">
+      <section className="fixed z-40 flex h-28 w-full items-center justify-between bg-black bg-opacity-100 px-4">
         <div className="mx-auto flex w-full max-w-[1080px] items-center justify-between sm:max-w-[800px]">
           <img
             className="sm:max-w-max-w-[118px] w-full max-w-28"
@@ -59,15 +59,15 @@ export default function Navbar() {
 
       {/* MOBILE MODAL NAV */}
       {isModalOpen && (
-        <div className="fixed z-50 h-screen w-full overflow-y-auto bg-white">
+        <div className="fixed z-50 h-screen w-full overflow-y-auto bg-gray-200">
           {" "}
           {/* Añadido overflow-y-auto */}
           {/* MOBILE HEADER */}
-          <section className="flex h-32 justify-between px-4">
+          <section className="flex h-28 justify-between px-4">
             <div className="mx-auto flex w-full max-w-[1096px] items-center justify-between sm:max-w-[800px]">
               <img
-                className="w-full max-w-[118px] sm:max-w-32"
-                src="src/static/img/logo.png"
+                className="sm:max-w-max-w-[118px] w-full max-w-28"
+                src={logo}
                 alt="Logo 50&50gl"
               />
               {/* MOBILE CLOSE ICON */}
@@ -108,7 +108,7 @@ export default function Navbar() {
               <a
                 key={index}
                 href="#"
-                className="xs:text-[2rem] xs:pb-2 flex w-full items-center transition duration-300 ease-in-out hover:text-gl-sky sm:text-[3.5rem] md:text-[4rem]"
+                className="flex w-full items-center transition duration-300 ease-in-out hover:text-gl-sky xs:pb-2 xs:text-[2rem] sm:text-[3.5rem] md:text-[4rem]"
                 onMouseEnter={() => handleMouseEnter(index)}
                 onMouseLeave={handleMouseLeave}
               >

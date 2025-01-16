@@ -19,5 +19,12 @@
     --gl-sky1: #5aaabf;
 
     --gl-red: #c80b22;
+
+    --facebook: #0866ff;
+    --instagram: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+    --linkedin: #0a66c2;
+    --tiktok: #ee1d51;
+    --x: #000000;
+    --youtube: #cd201f;
   }
 }
