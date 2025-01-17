@@ -21,13 +21,18 @@ module.exports = {
         "gl-sky": "var(--gl-sky)",
         "gl-sky1": "var(--gl-sky1)",
 
-        "gr-red": "var(--gl-red)",
+        "gl-red": "var(--gl-red)",
 
         facebook: "var(--facebook)",
         linkedin: "var(--linkedin)",
         tiktok: "var(--tiktok)",
         x: "var(--x)",
         youtube: "var(--youtube)",
+      },
+      textShadow: {
+        sm: "1px 1px 2px rgba(0, 0, 0, 0.5)",
+        DEFAULT: "2px 2px 4px rgba(0, 0, 0, 0.5)",
+        lg: "4px 4px 6px rgba(0, 0, 0, 0.5)",
       },
       backgroundImage: {
         "cabecera-home": "url('static/img/cabecera.jpg')",
@@ -38,5 +43,19 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        ".text-shadow-sm": {
+          textShadow: "1px 1px 2px rgba(0, 0, 0, 0.5)",
+        },
+        ".text-shadow": {
+          textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
+        },
+        ".text-shadow-lg": {
+          textShadow: "4px 4px 6px rgba(0, 0, 0, 0.5)",
+        },
+      });
+    },
+  ],
 };

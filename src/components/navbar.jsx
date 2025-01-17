@@ -31,8 +31,8 @@ export default function Navbar() {
 
   return (
     <>
-      <section className="fixed z-40 flex h-28 w-full items-center justify-between bg-black bg-opacity-100 px-4">
-        <div className="mx-auto flex w-full max-w-[1080px] items-center justify-between sm:max-w-[800px]">
+      <section className="fixed z-40 flex h-28 w-full items-center justify-between bg-black px-4">
+        <div className="mx-auto flex w-full items-center justify-between sm:max-w-[800px] md:max-w-[784px]">
           <img
             className="sm:max-w-max-w-[118px] w-full max-w-28"
             src={logo}
@@ -59,9 +59,7 @@ export default function Navbar() {
 
       {/* MOBILE MODAL NAV */}
       {isModalOpen && (
-        <div className="fixed z-50 h-screen w-full overflow-y-auto bg-gray-200">
-          {" "}
-          {/* Añadido overflow-y-auto */}
+        <div className="fixed z-50 h-screen w-full overflow-y-auto bg-black">
           {/* MOBILE HEADER */}
           <section className="flex h-28 justify-between px-4">
             <div className="mx-auto flex w-full max-w-[1096px] items-center justify-between sm:max-w-[800px]">
@@ -96,28 +94,28 @@ export default function Navbar() {
           </section>
           {/* END MOBILE HEADER */}
           {/* NAVIGATION */}
-          <nav className="mx-auto flex w-full max-w-[1080px] flex-col items-center justify-center px-4 py-4 sm:max-w-[800px]">
+          <nav className="mx-auto flex w-full max-w-[1080px] flex-col items-center justify-center px-4 py-4 text-white sm:max-w-[800px]">
             {[
-              "Quienes somos",
-              "Liderazgo",
-              "#Chicasimparables",
-              "WomenxWomen",
-              "Noticias",
-              "Contacto",
-            ].map((text, index) => (
+              { text: "Quienes somos", href: "/quienes-somos" },
+              { text: "Liderazgo", href: "/liderazgo" },
+              { text: "#Chicasimparables", href: "/chicas-imparables" },
+              { text: "WomenxWomen", href: "/womenxwomen" },
+              { text: "Noticias", href: "/noticias" },
+              { text: "Contacto", href: "/contacto" },
+            ].map((link, index) => (
               <a
                 key={index}
-                href="#"
-                className="flex w-full items-center transition duration-300 ease-in-out hover:text-gl-sky xs:pb-2 xs:text-[2rem] sm:text-[3.5rem] md:text-[4rem]"
+                href={link.href}
+                className="flex w-full transition duration-300 ease-in-out hover:text-gl-sky xs:pb-2 xs:text-[2rem] sm:text-[3.5rem] md:text-[4rem]"
                 onMouseEnter={() => handleMouseEnter(index)}
                 onMouseLeave={handleMouseLeave}
               >
                 <span
-                  className={`block h-10 bg-gl-sky text-gl-sky transition-all duration-300 ${
-                    hoveredLink === index ? "lg:mr-3 lg:w-16" : "lg:mr-0 lg:w-0"
+                  className={`mt-6 block h-8 bg-gl-sky text-gl-sky transition-all duration-300 ${
+                    hoveredLink === index ? "lg:mr-3 lg:w-14" : "lg:mr-0 lg:w-0"
                   }`}
                 ></span>
-                <span>{text}</span>
+                <span className="align-top">{link.text}</span>
               </a>
             ))}
           </nav>

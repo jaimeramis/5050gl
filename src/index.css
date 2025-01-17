@@ -27,4 +27,53 @@
     --x: #000000;
     --youtube: #cd201f;
   }
+  @font-face {
+    font-family: "Montserrat-Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("./assets/fonts/Montserrat-Regular.ttf") format("ttf");
+  }
+
+  @font-face {
+    font-family: "Montserrat-Bold";
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url("./assets/fonts/Montserrat-Bold.ttf") format("ttf");
+  }
+
+  @font-face {
+    font-family: "Montserrat-Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("./assets/fonts/Montserrat-Italic.ttf") format("ttf");
+  }
+
+  @font-face {
+    font-family: "Montserrat-ExtraBold";
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url("./assets/fonts/Montserrat-ExtraBold.ttf") format("ttf");
+  }
+
+  @font-face {
+    font-family: "Montserrat-SemiBold";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url("./assets/fonts/Montserrat-SemiBold.ttf") format("ttf");
+  }
+
+  body {
+    font-family: "Montserrat-Regular", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: "Montserrat-Bold", sans-serif;
+  }
 }
