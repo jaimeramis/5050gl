@@ -35,7 +35,10 @@ module.exports = {
         lg: "4px 4px 6px rgba(0, 0, 0, 0.5)",
       },
       backgroundImage: {
-        "cabecera-home": "url('static/img/cabecera.jpg')",
+        "cabecera-home": "url('/images/cabecera.jpg')",
+        "noticia-1": "url('/images/noticias/noticia1.jpg')",
+        "noticia-2": "url('/images/noticias/noticia2.jpg')",
+        "noticia-3": "url('/images/noticias/noticia3.jpg')",
         instagram: "var(--instagram)",
       },
       screens: {
@@ -57,5 +60,6 @@ module.exports = {
         },
       });
     },
+    require("@tailwindcss/line-clamp"),
   ],
 };

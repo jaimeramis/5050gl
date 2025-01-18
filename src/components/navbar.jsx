@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 //Importar las imagenes:
-import logo from "../static/img/logo.png";
+import logo from "/images/logo.png";
 
 export default function Navbar() {
   //Afecta a la apertura y cierre del Menú:

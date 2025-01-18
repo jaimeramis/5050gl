@@ -1,11 +1,11 @@
 //Importar imagenes:
-import logo from "../static/img/logo.png";
+import logo from "/images/logo.png";
 
 export default function Footer() {
   return (
     <>
       <footer className="static bottom-0 bg-black bg-opacity-100 py-10 text-white">
-        <div className="xs:px-10 container mx-auto max-w-[80rem] pb-10 sm:px-20">
+        <div className="container mx-auto max-w-[80rem] pb-10 xs:px-10 sm:px-20">
           <div className="grid grid-cols-1 justify-center gap-10 sm:gap-6 md:grid-cols-3">
             {/* LOGO */}
             <div className="mx-auto">
@@ -49,7 +49,7 @@ export default function Footer() {
           </div>
         </div>
         {/* LEGAL */}
-        <div className="xs:px-10 xs:items-start xs:flex-col flex flex-col justify-center gap-4 pb-8 text-sm sm:px-20 md:flex-row md:gap-4">
+        <div className="flex flex-col justify-center gap-4 pb-8 text-sm xs:flex-col xs:items-start xs:px-10 sm:px-20 md:flex-row md:gap-4">
           <a href="#" className="group relative">
             Política de Privacidad
             <p className="absolute bottom-0 left-0 h-[1px] w-0 bg-white transition-all duration-300 group-hover:right-0 group-hover:w-full"></p>
