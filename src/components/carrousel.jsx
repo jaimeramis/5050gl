@@ -84,7 +84,8 @@ export default function Carrousel() {
                   {/* BLOQUE DE IMAGEN */}
                   <div className="relative flex h-[300px] items-center lg:h-[300px] xl:h-auto">
                     <div
-                      className={`absolute inset-0 ${slide.image} bg-cover bg-center bg-no-repeat`} // Aplicar la clase de fondo
+                      className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                      style={{ backgroundImage: `url(${slide.image})` }}
                     ></div>
                   </div>
                   {/* FIN BLOQUE DE IMAGEN */}
@@ -102,7 +103,7 @@ export default function Carrousel() {
                         {slide.title}
                       </h2>
                     </a>
-                    <p className="text-md line-clamp-4 overflow-hidden overflow-ellipsis xs:text-xs sm:text-sm">
+                    <p className="text-md line-clamp-2 overflow-hidden overflow-ellipsis xs:text-xs sm:text-sm">
                       {slide.description}
                     </p>
                   </div>

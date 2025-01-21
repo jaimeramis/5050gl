@@ -36,13 +36,28 @@ module.exports = {
       },
       backgroundImage: {
         "cabecera-home": "url('/images/cabecera.jpg')",
-        "noticia-1": "url('/images/noticias/noticia1.jpg')",
-        "noticia-2": "url('/images/noticias/noticia2.jpg')",
-        "noticia-3": "url('/images/noticias/noticia3.jpg')",
         instagram: "var(--instagram)",
       },
       screens: {
         xs: "320px",
+      },
+      keyframes: {
+        expand: {
+          from: { height: "0" },
+          to: { height: "1.2em" },
+        },
+        fadeIn: {
+          from: { opacity: "0", transform: "translateY(1rem)" },
+          to: { opacity: "1", transform: "translateY(0)" },
+        },
+        fadeInOpacity: {
+          from: { opacity: "0" },
+          to: { opacity: "1" },
+        },
+      },
+      animation: {
+        expand: "expand 0.5s ease-out forwards",
+        "fade-in": "fadeIn 1s ease-out forwards",
       },
     },
   },

@@ -36,22 +36,19 @@
   }
 
   @font-face {
-    font-family: "Montserrat-ExtraBold";
+    font-family: "Baskerville-Regular";
     font-style: normal;
-    font-weight: 800;
+    font-weight: 400;
     font-display: swap;
-    src: url("./assets/fonts/Montserrat-ExtraBold.ttf") format("ttf");
+    src: url("./assets/fonts/LibreBaskerville-Regular.ttf") format("ttf");
   }
 
-  @font-face {
-    font-family: "Montserrat-SemiBold";
-    font-style: normal;
-    font-weight: 600;
-    font-display: swap;
-    src: url("./assets/fonts/Montserrat-SemiBold.ttf") format("ttf");
-  }
-
-  body {
+  body,
+  a {
     font-family: "Montserrat-Regular", sans-serif;
+  }
+
+  h1 {
+    font-family: "Baskerville-Regular", serif;
   }
 }

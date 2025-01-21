@@ -19,19 +19,19 @@ export default function Navbar() {
 
   useEffect(() => {
     if (isModalOpen) {
-      document.body.style.overflow = "hidden"; // Desactiva scroll del body
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = ""; // Reactiva scroll del body
+      document.body.style.overflow = "";
     }
 
     return () => {
-      document.body.style.overflow = ""; // Limpieza
+      document.body.style.overflow = "";
     };
   }, [isModalOpen]);
 
   return (
     <>
-      <section className="fixed z-40 flex h-28 w-full items-center justify-between bg-black px-4">
+      <section className="fixed z-50 flex h-28 w-full items-center justify-between bg-black px-4">
         <div className="mx-auto flex w-full items-center justify-between sm:max-w-[800px] md:max-w-[784px]">
           <img
             className="sm:max-w-max-w-[118px] w-full max-w-28"

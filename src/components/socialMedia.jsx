@@ -8,7 +8,7 @@ export default function socialMedia() {
         <a
           href={social.facebook}
           target="_blank"
-          className="hover:bg-facebook cursor-pointer rounded-full fill-black p-3 transition duration-300 ease-in-out hover:fill-white"
+          className="cursor-pointer rounded-full fill-black p-3 transition duration-300 ease-in-out hover:bg-facebook hover:fill-white"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +25,7 @@ export default function socialMedia() {
         <a
           href={social.instagram}
           target="_blank"
-          className="hover:bg-instagram cursor-pointer rounded-full fill-black p-3 transition duration-300 ease-in-out hover:fill-white"
+          className="cursor-pointer rounded-full fill-black p-3 transition duration-300 ease-in-out hover:bg-instagram hover:fill-white"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -42,7 +42,7 @@ export default function socialMedia() {
         <a
           href={social.linkedin}
           target="_blank"
-          className="hover:bg-linkedin cursor-pointer rounded-full fill-black p-3 transition duration-300 ease-in-out hover:fill-white"
+          className="cursor-pointer rounded-full fill-black p-3 transition duration-300 ease-in-out hover:bg-linkedin hover:fill-white"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +59,7 @@ export default function socialMedia() {
         <a
           href={social.tiktok}
           target="_blank"
-          className="hover:bg-tiktok cursor-pointer rounded-full fill-black p-3 transition duration-300 ease-in-out hover:fill-white"
+          className="cursor-pointer rounded-full fill-black p-3 transition duration-300 ease-in-out hover:bg-tiktok hover:fill-white"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +75,7 @@ export default function socialMedia() {
         <a
           href={social.x}
           target="_blank"
-          className="hover:bg-x cursor-pointer rounded-full fill-black p-3 transition duration-300 ease-in-out hover:fill-white"
+          className="cursor-pointer rounded-full fill-black p-3 transition duration-300 ease-in-out hover:bg-x hover:fill-white"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -91,7 +91,7 @@ export default function socialMedia() {
         <a
           href={social.youtube}
           target="_blank"
-          className="hover:bg-youtube cursor-pointer rounded-full fill-black p-3 transition duration-300 ease-in-out hover:fill-white"
+          className="cursor-pointer rounded-full fill-black p-3 transition duration-300 ease-in-out hover:bg-youtube hover:fill-white"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
