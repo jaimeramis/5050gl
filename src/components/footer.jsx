@@ -1,5 +1,7 @@
 //Importar imagenes:
 import logo from "/images/logo.png";
+import { Link } from "react-router-dom";
+import routes from "../data/navigation.json";
 
 export default function Footer() {
   return (
@@ -18,24 +20,11 @@ export default function Footer() {
             {/* END LOGO */}
             {/* ENLACES */}
             <div className="flex flex-col gap-4 md:mx-auto md:gap-3">
-              <a href="#" className="hover:text-gray-500">
-                Quienes somos
-              </a>
-              <a href="#" className="hover:text-gray-500">
-                Liderazgo
-              </a>
-              <a href="#" className="hover:text-gray-500">
-                #Chicas imparables
-              </a>
-              <a href="#" className="hover:text-gray-500">
-                WomenxWomen
-              </a>
-              <a href="#" className="hover:text-gray-500">
-                Noticias
-              </a>
-              <a href="#" className="hover:text-gray-500">
-                Contacto
-              </a>
+              {Object.values(routes).map(({ key, href, name }) => (
+                <Link key={key} to={href} className="hover:text-gray-500">
+                  {name}
+                </Link>
+              ))}
             </div>
             {/* END ENALCES */}
             {/* INFORMACIÓN */}

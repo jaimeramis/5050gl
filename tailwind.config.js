@@ -39,6 +39,8 @@ module.exports = {
         instagram: "var(--instagram)",
       },
       screens: {
+        supra: "1920px",
+        hd: "1536px",
         xs: "320px",
       },
       keyframes: {
@@ -54,10 +56,16 @@ module.exports = {
           from: { opacity: "0" },
           to: { opacity: "1" },
         },
+        scroll: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
       },
       animation: {
         expand: "expand 0.5s ease-out forwards",
         "fade-in": "fadeIn 1s ease-out forwards",
+        scroll: "scroll 50s linear infinite",
+        scrollMobile: "scroll 10s linear infinite",
       },
     },
   },

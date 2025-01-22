@@ -53,13 +53,13 @@ export default function Carrousel() {
   const handleTouchEnd = () => handleMouseUp();
 
   return (
-    <section className="bg-white">
+    <section className="bg-yellow-500">
       <div className="px-20 xs:px-4 xs:py-8 lg:py-32">
         <div className="pb-20">
-          <h2 className="text-center font-bold uppercase xs:pb-4 xs:text-4xl lg:text-[4rem] xl:pb-8">
+          <h2 className="text-center font-bold uppercase text-white xs:pb-4 xs:text-[2.6rem] lg:text-[4rem] xl:pb-8">
             ÚLTIMAS NOVEDADES
           </h2>
-          <p className="mx-auto h-0.5 w-52 bg-black"></p>
+          <p className="mx-auto h-0.5 w-52 bg-white"></p>
         </div>
 
         <div
@@ -80,7 +80,7 @@ export default function Carrousel() {
           >
             {slides.map((slide) => (
               <div key={slide.key} className="w-full flex-shrink-0">
-                <div className="mx-auto grid w-full bg-gray-50 text-center md:h-auto md:grid-cols-1 lg:max-w-[860px] xl:h-[680px] xl:max-w-[1080px] xl:grid-cols-2">
+                <div className="mx-auto grid w-full bg-white text-center md:h-auto md:grid-cols-1 lg:max-w-[860px] xl:h-[680px] xl:max-w-[1080px] xl:grid-cols-2">
                   {/* BLOQUE DE IMAGEN */}
                   <div className="relative flex h-[300px] items-center lg:h-[300px] xl:h-auto">
                     <div
@@ -97,7 +97,7 @@ export default function Carrousel() {
                     </span>
                     <a
                       href={slide.link}
-                      className="block pb-5 hover:text-gl-sky"
+                      className="block pb-5 hover:text-gl-pink"
                     >
                       <h2 className="break-words font-bold uppercase leading-tight xs:text-[1rem] lg:text-[2.8rem]">
                         {slide.title}
@@ -117,7 +117,7 @@ export default function Carrousel() {
 
           <button
             onClick={goToPreviousSlide}
-            className="absolute left-4 top-1/2 -translate-y-1/2 transform rounded-full bg-gl-purple p-3 text-white xs:hidden xl:block"
+            className="absolute left-4 top-1/2 -translate-y-1/2 transform rounded-full bg-gl-pink p-3 text-white xs:hidden xl:block"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -137,7 +137,7 @@ export default function Carrousel() {
 
           <button
             onClick={goToNextSlide}
-            className="absolute right-4 top-1/2 -translate-y-1/2 transform rounded-full bg-gl-purple p-3 text-white xs:hidden xl:block"
+            className="absolute right-4 top-1/2 -translate-y-1/2 transform rounded-full bg-gl-pink p-3 text-white xs:hidden xl:block"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

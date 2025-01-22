@@ -48,7 +48,8 @@
     font-family: "Montserrat-Regular", sans-serif;
   }
 
-  h1 {
+  h1,
+  h2 {
     font-family: "Baskerville-Regular", serif;
   }
 }

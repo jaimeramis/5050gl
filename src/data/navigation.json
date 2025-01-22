@@ -1,0 +1,38 @@
+{
+  "quienes": {
+    "key": 1,
+    "name": "Quienes Somos",
+    "href": "/quienes",
+    "component": "Quienes"
+  },
+  "liderazgo": {
+    "key": 2,
+    "name": "Liderazgo",
+    "href": "/liderazgo",
+    "component": "Liderazgo"
+  },
+  "chicas": {
+    "key": 3,
+    "name": "#ChicasImparables",
+    "href": "/chicas",
+    "component": "Chicas"
+  },
+  "women": {
+    "key": 4,
+    "name": "WomenxWomen",
+    "href": "/women",
+    "component": "Women"
+  },
+  "noticias": {
+    "key": 5,
+    "name": "Noticias",
+    "href": "/noticias",
+    "component": "Noticias"
+  },
+  "contacto": {
+    "key": 6,
+    "name": "Contacto",
+    "href": "/contacto",
+    "component": "Contacto"
+  }
+}

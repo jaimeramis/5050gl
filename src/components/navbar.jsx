@@ -1,24 +1,77 @@
-//Importar imagenes:
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import routes from "../data/navigation.json";
 import logo from "/images/logo.png";
-import React, { useState } from "react";
 
-export default function Navbar2() {
+export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
+  // Condicional para que cuando se haga Scroll se cambie el background a negro:
+  let scrollBg = "";
+
+  if (isScrolled) {
+    scrollBg = "lg:bg-black lg:bg-opacity-80";
+  }
+  if (isOpen) {
+    scrollBg = "bg-gl-pink";
+  }
+
+  // Acción de abrir y cerrar el menú
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  // Detectar si se hace scroll:
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  // Detectar cuando la pantalla cambia de tamaño y cerrar el menú en pantallas grandes:
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 1024) {
+        // Cerrar el menú en pantallas grandes
+        setIsOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  // Desactivar el scroll cuando el menú esté abierto en móviles
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden"; // Desactivar el scroll
+    } else {
+      document.body.style.overflow = ""; // Restaurar el scroll
+    }
+  }, [isOpen]);
+
   return (
     <>
       <header
-        className={`fixed z-50 flex w-full flex-col justify-between px-4 py-4 text-white transition-all duration-300 ease-in-out lg:flex-row lg:items-center lg:bg-inherit lg:px-12 ${
-          isOpen ? "bg-gl-pink" : "lg:bg-transparent"
-        }`}
+        className={`fixed z-50 flex w-full flex-col justify-between px-4 py-4 text-white transition-all duration-300 ease-in-out md:px-16 lg:flex-row lg:items-center ${scrollBg}`}
       >
         <div className="flex justify-between">
           <img
-            className="w-full max-w-28 sm:max-w-[118px]"
+            className="w-full max-w-28 sm:max-w-[100px]"
             src={logo}
             alt="Logo 50&50gl"
           />
@@ -59,22 +112,11 @@ export default function Navbar2() {
           } lg:block lg:translate-y-0 lg:opacity-100 ${isOpen ? "transition-all duration-500 ease-in-out" : ""}`}
         >
           <div className="flex flex-col items-center py-6 text-center text-3xl lg:flex-row lg:gap-6 lg:text-[16px]">
-            {[
-              { text: "Quienes somos", href: "/quienes-somos" },
-              { text: "Liderazgo", href: "/liderazgo" },
-              { text: "#Chicasimparables", href: "/chicas-imparables" },
-              { text: "WomenxWomen", href: "/womenxwomen" },
-              { text: "Noticias", href: "/noticias" },
-              { text: "Contacto", href: "/contacto" },
-            ].map((link, index) => (
-              <a
-                key={index}
-                href={link.href}
-                className="group relative py-4 lg:py-0"
-              >
-                {link.text}
+            {Object.values(routes).map(({ key, href, name }) => (
+              <Link key={key} to={href} className="group relative py-4 lg:py-0">
+                {name}
                 <p className="absolute bottom-1.5 left-0 h-[1px] w-0 bg-white transition-all duration-500 group-hover:right-0 group-hover:w-full"></p>
-              </a>
+              </Link>
             ))}
           </div>
         </nav>
