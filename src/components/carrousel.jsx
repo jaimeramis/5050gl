@@ -53,13 +53,13 @@ export default function Carrousel() {
   const handleTouchEnd = () => handleMouseUp();
 
   return (
-    <section className="bg-yellow-500">
+    <section className="bg-gray-50">
       <div className="px-20 xs:px-4 xs:py-8 lg:py-32">
         <div className="pb-20">
-          <h2 className="text-center font-bold uppercase text-white xs:pb-4 xs:text-[2.6rem] lg:text-[4rem] xl:pb-8">
+          <h2 className="text-center font-bold uppercase xs:pb-4 xs:text-[2.6rem] lg:text-[4rem] xl:pb-8">
             ÚLTIMAS NOVEDADES
           </h2>
-          <p className="mx-auto h-0.5 w-52 bg-white"></p>
+          <p className="mx-auto h-0.5 w-52 bg-black"></p>
         </div>
 
         <div

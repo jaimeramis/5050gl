@@ -21,7 +21,7 @@
     --gl-red: #c80b22;
 
     --facebook: #0866ff;
-    --instagram: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+    --instagram: #d43089;
     --linkedin: #0a66c2;
     --tiktok: #ee1d51;
     --x: #000000;
@@ -43,7 +43,12 @@
     src: url("./assets/fonts/LibreBaskerville-Regular.ttf") format("ttf");
   }
 
-  body,
+  body {
+    font-family: "Montserrat-Regular", sans-serif;
+    --tw-bg-opacity: 1;
+    background-color: rgb(249 250 251 / var(--tw-bg-opacity, 1));
+  }
+
   a {
     font-family: "Montserrat-Regular", sans-serif;
   }

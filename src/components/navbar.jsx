@@ -11,7 +11,7 @@ export default function Navbar() {
   let scrollBg = "";
 
   if (isScrolled) {
-    scrollBg = "lg:bg-black lg:bg-opacity-80";
+    scrollBg = "lg:bg-black lg:bg-opacity-100";
   }
   if (isOpen) {
     scrollBg = "bg-gl-pink";
@@ -77,30 +77,34 @@ export default function Navbar() {
           />
           <button className="block lg:hidden" onClick={toggleMenu}>
             {isOpen ? (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-7 w-7"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
+              <div className="pr-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-7 w-7"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </div>
             ) : (
-              <svg
-                className="block h-10 max-w-[40px] fill-current"
-                viewBox="0 0 40 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path transform="translate(0, -2)" d="M0 3h40v2H0V3z"></path>
-                <path transform="translate(0, 0)" d="M0 9h40v2H0V9z"></path>
-                <path transform="translate(0, 2)" d="M0 15h40v2H0v-2z"></path>
-              </svg>
+              <div className="rounded bg-gl-blue1 px-2 py-1">
+                <svg
+                  className="block h-10 max-w-[34px] fill-current"
+                  viewBox="0 0 40 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path transform="translate(0, -2)" d="M0 3h40v2H0V3z"></path>
+                  <path transform="translate(0, 0)" d="M0 9h40v2H0V9z"></path>
+                  <path transform="translate(0, 2)" d="M0 15h40v2H0v-2z"></path>
+                </svg>
+              </div>
             )}
           </button>
         </div>

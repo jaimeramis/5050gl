@@ -24,6 +24,7 @@ module.exports = {
         "gl-red": "var(--gl-red)",
 
         facebook: "var(--facebook)",
+        instagram: "var(--instagram)",
         linkedin: "var(--linkedin)",
         tiktok: "var(--tiktok)",
         x: "var(--x)",
@@ -36,7 +37,7 @@ module.exports = {
       },
       backgroundImage: {
         "cabecera-home": "url('/images/cabecera.jpg')",
-        instagram: "var(--instagram)",
+        "quote-1": "url('/images/image1.jpg')",
       },
       screens: {
         supra: "1920px",
