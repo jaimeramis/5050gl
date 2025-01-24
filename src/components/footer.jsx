@@ -2,6 +2,7 @@
 import logo from "/images/logo.png";
 import { Link } from "react-router-dom";
 import routes from "../data/navigation.json";
+import legal from "../data/legal.json";
 
 export default function Footer() {
   return (
@@ -39,22 +40,12 @@ export default function Footer() {
         </div>
         {/* LEGAL */}
         <div className="flex flex-col justify-center gap-4 pb-8 text-sm xs:flex-col xs:items-start xs:px-10 sm:px-20 md:flex-row md:gap-4">
-          <a href="/privacidad" className="group relative">
-            Política de Privacidad
-            <p className="absolute bottom-0 left-0 h-[1px] w-0 bg-white transition-all duration-300 group-hover:right-0 group-hover:w-full"></p>
-          </a>
-          <a href="/aviso" className="group relative">
-            Aviso Legal
-            <p className="absolute bottom-0 left-0 h-[1px] w-0 bg-white transition-all duration-300 group-hover:right-0 group-hover:w-full"></p>
-          </a>
-          <a href="/corrupcion" className="group relative">
-            Política contra la Corrupción y el Fraude
-            <p className="absolute bottom-0 left-0 h-[1px] w-0 bg-white transition-all duration-300 group-hover:right-0 group-hover:w-full"></p>
-          </a>
-          <a href="/cookies" className="group relative">
-            Política de cookies
-            <p className="absolute bottom-0 left-0 h-[1px] w-0 bg-white transition-all duration-300 group-hover:right-0 group-hover:w-full"></p>
-          </a>
+          {Object.values(legal).map(({ key, href, name }) => (
+            <Link key={key} to={href} className="group relative">
+              {name}
+              <p className="absolute bottom-0 left-0 h-[1px] w-0 bg-white transition-all duration-300 group-hover:right-0 group-hover:w-full"></p>
+            </Link>
+          ))}
         </div>
 
         <span className="mx-auto block w-full text-center text-xs">

@@ -1,0 +1,26 @@
+{
+  "privacidad": {
+    "key": 1,
+    "name": "Política de Privacidad",
+    "href": "/privacidad",
+    "component": "Privacidad"
+  },
+  "aviso": {
+    "key": 2,
+    "name": "Aviso Legal",
+    "href": "/aviso",
+    "component": "Aviso"
+  },
+  "corrupcion": {
+    "key": 3,
+    "name": "Política contra la Corrupción y el Fraude",
+    "href": "/corrupcion",
+    "component": "Corrupcion"
+  },
+  "cookies": {
+    "key": 4,
+    "name": "Política de cookies",
+    "href": "/cookies",
+    "component": "Cookies"
+  }
+}

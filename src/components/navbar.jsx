@@ -71,7 +71,7 @@ export default function Navbar() {
       >
         <div className="flex justify-between">
           <img
-            className="w-full max-w-28 sm:max-w-[100px]"
+            className="w-full max-w-28 xs:max-w-[100px]"
             src={logo}
             alt="Logo 50&50gl"
           />

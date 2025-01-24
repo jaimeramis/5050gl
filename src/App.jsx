@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import routes from "./data/navigation.json";
+import legal from "./data/legal.json";
 
 //PÁGINAS PRINCIPALES:
 import Home from "./pages/home";
@@ -26,25 +27,33 @@ export default function App() {
     Contacto,
   };
 
+  const legalComponents = {
+    Privacidad,
+    Aviso,
+    Corrupcion,
+    Cookies,
+  };
+
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         {Object.values(routes).map(({ key, href, component }) => {
-          const Component = componentsMap[component]; // Resuelve el componente
-
-          // Si no se encuentra el componente, muestra un error en consola.
+          const Component = componentsMap[component];
           if (!Component) {
-            console.error(`Componente no encontrado: ${component}`);
+            console.error(`Componente NAVEGACION no encontrado: ${component}`);
             return null;
           }
-
           return <Route key={key} path={href} element={<Component />} />;
         })}
-        <Route path="/privacidad" element={<Privacidad />} />
-        <Route path="/aviso" element={<Aviso />} />
-        <Route path="/corrupcion" element={<Corrupcion />} />
-        <Route path="/cookies" element={<Cookies />} />
+        {Object.values(legal).map(({ key, href, component }) => {
+          const LegalComponent = legalComponents[component];
+          if (!LegalComponent) {
+            console.error(`Componente LEGAL no encontrado: ${component}`);
+            return null;
+          }
+          return <Route key={key} path={href} element={<LegalComponent />} />;
+        })}
       </Routes>
     </BrowserRouter>
   );
