@@ -67,12 +67,12 @@ export default function Navbar({ bg }) {
   return (
     <>
       <header
-        className={`lg:${bg} fixed z-50 flex w-full flex-col justify-between px-4 py-4 text-white transition-all duration-300 ease-in-out md:px-4 lg:flex-row lg:items-center ${scrollBg}`}
+        className={`lg:${bg} fixed z-50 flex w-full flex-col justify-between px-4 py-4 text-white md:px-4 lg:flex-row lg:items-center ${scrollBg} transition duration-300 ease-out`}
       >
         <div className="flex justify-between">
           <Link key="0" to="/">
             <img
-              className="w-full max-w-28 xs:max-w-[100px]"
+              className="relative z-40 w-full max-w-28 xs:max-w-[100px]"
               src={logo}
               alt="Logo 50&50gl"
             />
@@ -112,10 +112,8 @@ export default function Navbar({ bg }) {
         </div>
         <nav
           className={`${
-            isOpen
-              ? "block translate-y-0 opacity-100"
-              : "translate-y-[-50rem] opacity-0"
-          } lg:block lg:translate-y-0 lg:opacity-100 ${isOpen ? "transition-all duration-500 ease-in-out" : ""}`}
+            isOpen ? "block opacity-100" : "hidden opacity-0"
+          } lg:block lg:opacity-100`}
         >
           <div className="flex flex-col items-center py-6 text-center text-3xl lg:flex-row lg:gap-6 lg:text-[16px]">
             {Object.values(routes).map(({ key, href, name }) => (

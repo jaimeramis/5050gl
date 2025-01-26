@@ -10,6 +10,7 @@ export default function Contacto() {
   });
 
   const [errors, setErrors] = useState({});
+  const [mensajeExito, setMensajeExito] = useState("");
 
   // Manejo de cambios en los inputs
   const handleChange = (e) => {
@@ -37,6 +38,11 @@ export default function Contacto() {
       newErrors.mensaje = "El mensaje no puede superar los 500 caracteres.";
     }
 
+    if (Object.keys(newErrors).length > 0) {
+      // Si hay errores, eliminamos el mensaje de éxito
+      setMensajeExito("");
+    }
+
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0; // Si no hay errores, retorna true
   };
@@ -53,17 +59,16 @@ export default function Contacto() {
       const body = encodeURIComponent(
         `Nombre: ${formData.nombre}\nEmail: ${formData.email}\nMensaje: ${formData.mensaje}`,
       );
-      const mailtoLink = `mailto:jrjramis984@gmail.com?subject=${subject}&body=${body}`; //Aqui se cambia la dirección de correo.
+      const mailtoLink = `mailto:jrjramis984@gmail.com?subject=${subject}&body=${body}`; // Aquí se cambia la dirección de correo.
 
-      // Redirigir al usuario al correo
+      // Redirigir el usuario al correo
       window.location.href = mailtoLink;
 
+      // Mostrar mensaje de éxito
+      setMensajeExito("Formulario enviado con éxito");
+
       // Limpiar los campos solo si la validación es exitosa
-      alert("¡Formulario enviado con éxito!");
       setFormData({ nombre: "", email: "", mensaje: "" }); // Limpiar campos
-    } else {
-      // Si la validación falla, no limpiar los campos
-      alert("Por favor, complete correctamente el formulario.");
     }
   };
 
@@ -72,7 +77,7 @@ export default function Contacto() {
       <Navbar bg="bg-black" />
       {/* PROMO */}
       <section className="flex items-center justify-center py-32">
-        <div className="flex w-full flex-col px-4 md:gap-4 xl:flex-row xl:gap-16 xl:p-32">
+        <div className="flex w-full flex-col gap-16 px-4 xl:flex-row xl:p-32">
           {/* COLUMN 1 */}
           <div className="h-auto w-full">
             <div className="pb-6">
@@ -84,6 +89,13 @@ export default function Contacto() {
             <h2 className="pb-2 text-[2rem] xs:text-[1.6rem]">
               ¿En qué podemos ayudarte?
             </h2>
+            {/* MENSAJE DE ÉXITO*/}
+            {mensajeExito && (
+              <p className="mt-4 bg-green-200 p-4 font-bold text-green-600">
+                {mensajeExito}
+              </p>
+            )}
+            {/* END MENSAJE DE ÉXITO*/}
             {/* INPUTS */}
             <form
               onSubmit={handleSubmit}
@@ -119,7 +131,6 @@ export default function Contacto() {
                 <p className="text-sm text-red-500">{errors.email}</p>
               )}
 
-              {/* Mensaje */}
               <div className="flex w-full flex-col">
                 <textarea
                   maxLength="500"
@@ -136,7 +147,7 @@ export default function Contacto() {
                 )}
               </div>
 
-              {/* Botón Enviar */}
+              {/* SUBMIT */}
               <div className="flex justify-end">
                 <button
                   type="submit"
@@ -145,13 +156,20 @@ export default function Contacto() {
                   Enviar
                 </button>
               </div>
+              {/* END SUBMIT */}
             </form>
             {/* END INPUTS */}
           </div>
           {/* END COLUMN 1 */}
 
           {/* COLUMN 2 */}
-          <div className="w-full bg-sky-300 xs:h-[30rem] md:h-auto">
+          <div className="w-full xs:h-[30rem] md:h-auto">
+            <div className="pb-6">
+              <h2 className="pb-2 uppercase xs:text-[2rem] md:text-[3.4rem]">
+                Ubicación
+              </h2>
+              <p className="h-0.5 w-40 bg-black"></p>
+            </div>
             <div
               className="relative h-full w-full"
               style={{ paddingTop: "56.25%" }}
