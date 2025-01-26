@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import routes from "./data/navigation.json";
 import legal from "./data/legal.json";
+import ScrollToTop from "./components/scrollTop";
 
 //PÁGINAS PRINCIPALES:
 import Home from "./pages/home";
@@ -36,6 +37,7 @@ export default function App() {
 
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         {Object.values(routes).map(({ key, href, component }) => {

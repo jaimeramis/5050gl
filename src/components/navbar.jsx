@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import routes from "../data/navigation.json";
 import logo from "/images/logo.png";
 
-export default function Navbar() {
+export default function Navbar({ bg }) {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -67,14 +67,16 @@ export default function Navbar() {
   return (
     <>
       <header
-        className={`fixed z-50 flex w-full flex-col justify-between px-4 py-4 text-white transition-all duration-300 ease-in-out md:px-16 lg:flex-row lg:items-center ${scrollBg}`}
+        className={`lg:${bg} fixed z-50 flex w-full flex-col justify-between px-4 py-4 text-white transition-all duration-300 ease-in-out md:px-4 lg:flex-row lg:items-center ${scrollBg}`}
       >
         <div className="flex justify-between">
-          <img
-            className="w-full max-w-28 xs:max-w-[100px]"
-            src={logo}
-            alt="Logo 50&50gl"
-          />
+          <Link key="0" to="/">
+            <img
+              className="w-full max-w-28 xs:max-w-[100px]"
+              src={logo}
+              alt="Logo 50&50gl"
+            />
+          </Link>
           <button className="block lg:hidden" onClick={toggleMenu}>
             {isOpen ? (
               <div className="pr-1">
