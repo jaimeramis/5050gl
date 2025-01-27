@@ -38,6 +38,8 @@ module.exports = {
       backgroundImage: {
         "cabecera-home": "url('/images/cabecera.jpg')",
         "quote-1": "url('/images/image1.jpg')",
+        gloria: "url('/images/quienes/gloria.png')",
+        "quienes-fondo": "url('/images/quienes/quienes-bg.jpg')",
       },
       screens: {
         supra: "1920px",

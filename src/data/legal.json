@@ -2,25 +2,25 @@
   "privacidad": {
     "key": 1,
     "name": "Política de Privacidad",
-    "href": "/privacidad",
+    "href": "/politicadeprivacidad",
     "component": "Privacidad"
   },
   "aviso": {
     "key": 2,
     "name": "Aviso Legal",
-    "href": "/aviso",
+    "href": "/avisolegal",
     "component": "Aviso"
   },
   "corrupcion": {
     "key": 3,
     "name": "Política contra la Corrupción y el Fraude",
-    "href": "/corrupcion",
+    "href": "/politica-contra-corrupcion-y-fraude",
     "component": "Corrupcion"
   },
   "cookies": {
     "key": 4,
     "name": "Política de cookies",
-    "href": "/cookies",
+    "href": "/politicadecookies",
     "component": "Cookies"
   }
 }

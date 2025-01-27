@@ -1,8 +1,8 @@
 {
   "quienes": {
     "key": 1,
-    "name": "Quienes Somos",
-    "href": "/quienes",
+    "name": "Quiénes Somos",
+    "href": "/somos",
     "component": "Quienes"
   },
   "liderazgo": {
@@ -14,13 +14,13 @@
   "chicas": {
     "key": 3,
     "name": "#ChicasImparables",
-    "href": "/chicas",
+    "href": "/chicasimparables",
     "component": "Chicas"
   },
   "women": {
     "key": 4,
     "name": "WomenxWomen",
-    "href": "/women",
+    "href": "/womenxwomen",
     "component": "Women"
   },
   "noticias": {

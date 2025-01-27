@@ -67,7 +67,7 @@ export default function Navbar({ bg }) {
   return (
     <>
       <header
-        className={`lg:${bg} fixed z-50 flex w-full flex-col justify-between px-4 py-4 text-white md:px-4 lg:flex-row lg:items-center ${scrollBg} transition duration-300 ease-out`}
+        className={`lg:${bg} fixed z-50 flex w-full flex-col justify-between px-4 py-4 text-white md:px-6 lg:flex-row lg:items-center ${scrollBg} lg:transition lg:duration-300 lg:ease-out`}
       >
         <div className="flex justify-between">
           <Link key="0" to="/">
