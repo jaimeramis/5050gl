@@ -1,0 +1,72 @@
+[
+  {
+    "key": 1,
+    "title": "Implicar",
+    "description": "a mujeres y hombres en la causa justa de la igualdad",
+    "bg": "bg-gl-blue",
+    "image": "/images/quienes/proposito-1.png"
+  },
+  {
+    "key": 2,
+    "title": "Acelerar",
+    "description": "empoderamiento femenino en transformación digital",
+    "bg": "bg-gl-purple",
+    "image": "/images/quienes/proposito-2.jpg"
+  },
+  {
+    "key": 3,
+    "title": "Visibilizar",
+    "description": "mujeres líderes y mujeres referentes con voz y foco",
+    "bg": "bg-gl-pink",
+    "image": "/images/quienes/proposito-3.jpg"
+  },
+  {
+    "key": 4,
+    "title": "Dar formación",
+    "description": "programas y cursos sin sesgos ni estereotipos",
+    "bg": "bg-gl-sky",
+    "image": "/images/quienes/proposito-4.jpg"
+  },
+  {
+    "key": 5,
+    "title": "Generar",
+    "description": "autoestima en niñas y chicas para orientar liderazgos",
+    "bg": "bg-gl-red",
+    "image": "/images/quienes/proposito-5.jpg"
+  },
+  {
+    "key": 6,
+    "title": "Apasionar",
+    "description": "por la tecnología y el futuro a las jóvenes y mujeres",
+    "bg": "bg-gl-red",
+    "image": "/images/quienes/proposito-6.jpg"
+  },
+  {
+    "key": 7,
+    "title": "Mentorizar",
+    "description": "a mujeres para impulsar sólidos liderazgos femeninos",
+    "bg": "bg-gl-sky",
+    "image": "/images/quienes/proposito-7.jpg"
+  },
+  {
+    "key": 8,
+    "title": "Orientar",
+    "description": "a líderes y empresas en igualdad, diversidad e inclusión",
+    "bg": "bg-gl-purple",
+    "image": "/images/quienes/proposito-8.png"
+  },
+  {
+    "key": 9,
+    "title": "Trazar",
+    "description": "redes para la mujer directiva, emprendedora y empresaria",
+    "bg": "bg-gl-blue",
+    "image": "/images/quienes/proposito-9.png"
+  },
+  {
+    "key": 10,
+    "title": "Ayudar",
+    "description": "a las empresas que trabajan con ODS y propósitos ESG",
+    "bg": "bg-gl-pink",
+    "image": "/images/quienes/proposito-10.jpeg"
+  }
+]

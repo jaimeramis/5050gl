@@ -1,0 +1,65 @@
+[
+  {
+    "key": 1,
+    "name": "Ángel Sáenz de Cenzano",
+    "description": "Director General de LinkedIn España y Portugal",
+    "image": "/images/quienes/asesores/asesor-1.jpg",
+    "linkdin": "https://www.linkedin.com/in/angelsaenzdecenzano/"
+  },
+  {
+    "key": 2,
+    "name": "Belén Gancedo",
+    "description": "Regional Vice President Sales, Education EMEA de Salesforce",
+    "image": "/images/quienes/asesores/asesor-2.jpg",
+    "linkdin": "https://www.linkedin.com/in/belen-gancedo-riestra/"
+  },
+  {
+    "key": 3,
+    "name": "Carme Artigas",
+    "description": "Copresidenta Consejo Asesor IA de Naciones Unidas",
+    "image": "/images/quienes/asesores/asesor-3.jpg",
+    "linkdin": "https://www.linkedin.com/in/carme-artigas-7316513/"
+  },
+  {
+    "key": 4,
+    "name": "Carmen Alsina",
+    "description": "Directora Comunicación, RRII y Sostenibilidad de CEOE",
+    "image": "/images/quienes/asesores/asesor-4.jpg",
+    "linkdin": "https://www.linkedin.com/in/mariadelcarmenalsina/"
+  },
+  {
+    "key": 5,
+    "name": "Fátima Báñez",
+    "description": "Presidenta de Fundación CEOE, Ex Ministra de Empleo",
+    "image": "/images/quienes/asesores/asesor-5.jpg",
+    "linkdin": "https://www.linkedin.com/in/fatimabanez/"
+  },
+  {
+    "key": 6,
+    "name": "Guiseppe Tringali",
+    "description": "Vicepresidente del Consejo Asesor Internacional IE, Ex CEO Mediaset",
+    "image": "/images/quienes/asesores/asesor-6.png",
+    "linkdin": "https://www.linkedin.com/in/giuseppe-tringali-527924b0/"
+  },
+  {
+    "key": 7,
+    "name": "Irene Cano",
+    "description": "Directora General de Meta España y Portugal",
+    "image": "/images/quienes/asesores/asesor-7.jpg",
+    "linkdin": "https://www.linkedin.com/in/irenecano/"
+  },
+  {
+    "key": 8,
+    "name": "Joana Bonet",
+    "description": "Periodista, escritora asesora cultural, Directora Magazine de la Vanguardia",
+    "image": "/images/quienes/asesores/asesor-8.jpg",
+    "linkdin": "https://www.linkedin.com/in/joana-bonet/"
+  },
+  {
+    "key": 9,
+    "name": "Juan Díaz-Andreu",
+    "description": "HeadHunter de Alexander Hughes. Profesor en IE Business School",
+    "image": "/images/quienes/asesores/asesor-9.jpg",
+    "linkdin": "https://www.linkedin.com/in/jdiazandreu/"
+  }
+]

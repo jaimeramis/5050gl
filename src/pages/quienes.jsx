@@ -1,6 +1,7 @@
-import video from "/images/video.jpg";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import proposito from "../data/propositos.json";
+import asesores from "../data/asesores.json";
 
 export default function Quienes() {
   return (
@@ -93,34 +94,101 @@ export default function Quienes() {
       {/* PROPOSITOS */}
       <section className="flex flex-wrap items-center justify-center">
         {/* CARDS */}
-        <div className="group relative h-[28rem] cursor-pointer overflow-hidden text-white xs:w-[100%] md:w-[50%] xl:w-[20%]">
-          <img
-            src={video}
-            alt="Fondo dinámico"
-            className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-150"
-          />
+        {Object.values(proposito).map(
+          ({ key, title, description, bg, image }) => (
+            <div
+              key={key}
+              className="group relative h-[28rem] cursor-pointer overflow-hidden text-white xs:w-[100%] md:w-[50%] xl:w-[20%]"
+            >
+              <img
+                src={image}
+                alt="Fondo propósito"
+                className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-150"
+              />
 
-          {/* OVERLAY */}
-          <div className="absolute inset-0 bg-gl-blue opacity-80"></div>
-          {/* END OVERLAY */}
+              {/* OVERLAY */}
+              <div className={`${bg} absolute inset-0 opacity-80`}></div>
+              {/* END OVERLAY */}
 
-          {/* CONTENT */}
-          <div className="relative z-40 flex h-full flex-col items-center justify-center p-8 text-center">
-            <div className="text-4xl font-bold uppercase">
-              <h3>Implicar</h3>
+              {/* CONTENT */}
+              <div className="relative z-40 flex h-full flex-col items-center justify-center p-8 text-center">
+                <div className="text-4xl font-bold uppercase">
+                  <h3>{title}</h3>
+                </div>
+                {/* ESPACIADO */}
+                <div className="py-0 transition-[padding] duration-500 ease-in-out group-hover:py-[8rem]"></div>
+                {/* END ESPACIADO */}
+                <div className="xs:text-md opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100 lg:text-lg">
+                  <p>{description}</p>
+                </div>
+              </div>
+              {/* END CONTENT */}
             </div>
-            {/* ESPACIADO */}
-            <div className="py-0 transition-[padding] duration-500 ease-in-out group-hover:py-[10rem]"></div>
-            {/* END ESPACIADO */}
-            <div className="xs:text-md opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100 lg:text-lg">
-              <p>a mujeres y hombres en la causa justa de la igualdad</p>
-            </div>
-          </div>
-          {/* END CONTENT */}
-        </div>
+          ),
+        )}
         {/* END CARDS */}
       </section>
       {/* END PROPOSITOS */}
+      {/* ASESORES */}
+      <section className="bg-gl-sky xs:py-10 md:py-20">
+        <div className="mx-auto flex h-full w-full max-w-[1920px] flex-col">
+          {/* TEXT */}
+          <div className="h-full w-full text-center text-white">
+            <div className="xs:pb-10 md:pb-24">
+              <h2 className="pb-2 xs:text-[2rem] md:text-[3.4rem]">
+                Consejo Asesor
+              </h2>
+              <p className="mx-auto h-0.5 w-40 bg-white"></p>
+            </div>
+          </div>
+          {/* END TEXT */}
+          {/* CARDS LIST */}
+          <div className="flex flex-wrap justify-center gap-4 px-4">
+            {Object.values(asesores).map(
+              ({ key, name, description, image, linkedin }) => (
+                // Tarjeta para cada asesor
+                <div
+                  key={key}
+                  className="h-[28rem] overflow-hidden rounded-md bg-gray-200 text-center text-black xs:w-full sm:w-[20rem] lg:w-[24rem]"
+                >
+                  <img
+                    className="h-[14rem] w-full object-cover"
+                    src={image}
+                    alt={name}
+                  />
+                  {/* INFO */}
+                  <div className="flex h-1/2 flex-col items-center justify-center p-4">
+                    <h3 className="pb-4 font-bold xs:text-xl sm:text-2xl">
+                      {name}
+                    </h3>
+                    <p className="pb-4">{description}</p>
+                    <div className="flex items-center justify-center">
+                      <a
+                        href={linkedin}
+                        target="_blank"
+                        className="cursor-pointer rounded-full p-3 transition duration-300 ease-in-out hover:bg-linkedin hover:fill-white"
+                        rel="noopener noreferrer" // Seguridad adicional
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          width="24px"
+                          height="24px"
+                        >
+                          <path d="M19,3H5C3.895,3,3,3.895,3,5v14c0,1.105,0.895,2,2,2h14c1.105,0,2-0.895,2-2V5C21,3.895,20.105,3,19,3z M9,17H6.477v-7H9 V17z M7.694,8.717c-0.771,0-1.286-0.514-1.286-1.2s0.514-1.2,1.371-1.2c0.771,0,1.286,0.514,1.286,1.2S8.551,8.717,7.694,8.717z M18,17h-2.442v-3.826c0-1.058-0.651-1.302-0.895-1.302s-1.058,0.163-1.058,1.302c0,0.163,0,3.826,0,3.826h-2.523v-7h2.523v0.977 C13.93,10.407,14.581,10,15.802,10C17.023,10,18,10.977,18,13.174V17z" />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              ),
+            )}
+          </div>
+          {/* END CARDS LIST */}
+        </div>
+      </section>
+      {/* END ASESORES */}
+
       <Footer />
     </>
   );
