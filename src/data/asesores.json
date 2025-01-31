@@ -61,5 +61,12 @@
     "description": "HeadHunter de Alexander Hughes. Profesor en IE Business School",
     "image": "/images/quienes/asesores/asesor-9.jpg",
     "linkdin": "https://www.linkedin.com/in/jdiazandreu/"
+  },
+  {
+    "key": 10,
+    "name": "Juan Pedro Moreno",
+    "description": "Empresario Presidente Ejecutivo de WPP",
+    "image": "/images/quienes/asesores/asesor-10.jpg",
+    "linkdin": "https://www.linkedin.com/in/juanpedromoreno1/"
   }
 ]

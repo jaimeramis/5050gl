@@ -149,7 +149,7 @@ export default function Quienes() {
                 // Tarjeta para cada asesor
                 <div
                   key={key}
-                  className="h-[28rem] overflow-hidden rounded-md bg-gray-200 text-center text-black xs:w-full sm:w-[20rem] lg:w-[24rem]"
+                  className="h-[28rem] overflow-hidden rounded-md bg-gray-200 text-center text-black xs:w-full sm:w-[20rem] lg:w-[22rem]"
                 >
                   <img
                     className="h-[14rem] w-full object-cover"
