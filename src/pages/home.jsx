@@ -4,9 +4,11 @@ import video from "/images/video.jpg";
 import Navbar from "../components/navbar";
 import Quote from "../components/quote";
 import InfiniteText from "../components/infiniteText";
-//import Carrousel from "../components/carrousel";
 import SocialMedia from "../components/socialMedia";
 import Footer from "../components/footer";
+
+import brands from "../data/brands.json";
+import institutions from "../data/institutions.json";
 
 export default function Home() {
   return (
@@ -168,6 +170,64 @@ export default function Home() {
             la promoción profesional de la mujer"'
       />
       {/* END QUOTE */}
+      {/* MARCAS */}
+      <section className="bg-white xs:py-10 md:py-20">
+        <div className="mx-auto flex h-full w-full max-w-[1920px] flex-col">
+          {/* TEXT */}
+          <div className="h-full w-full text-center">
+            <div className="xs:pb-10 md:pb-16">
+              <h2 className="pb-2 xs:text-[2rem] md:text-[3.4rem]">
+                Nuestras Alianzas <span className="text-gl-purple">50&50</span>
+              </h2>
+              <p className="mx-auto h-0.5 w-40 bg-black"></p>
+            </div>
+            <div className="xs:pb-10 md:pb-24">
+              <h2 className="xs:text-[1.5rem] md:text-[2.4rem]">
+                Quizás nos has visto con...
+              </h2>
+            </div>
+          </div>
+          {/* END TEXT */}
+          {/* MARCAS LIST */}
+          <div className="flex flex-wrap justify-center gap-4">
+            {Object.values(brands).map(({ key, name, image }) => (
+              <div className="px-4 py-2">
+                <img
+                  key={key}
+                  className="mx-auto w-full xs:max-w-[100px] md:max-w-[150px]"
+                  src={image}
+                  alt={name}
+                />
+              </div>
+            ))}
+          </div>
+          {/* END MARCAS LIST */}
+          {/* TEXT */}
+          <div className="h-full w-full text-center">
+            <div className="xs:py-10 md:py-20">
+              <h2 className="xs:text-[1.5rem] md:text-[2.4rem]">
+                ...o con estas instituciones:
+              </h2>
+            </div>
+          </div>
+          {/* END TEXT */}
+          {/* INTITUTIONS LIST */}
+          <div className="flex flex-wrap justify-center gap-4">
+            {Object.values(institutions).map(({ key, name, image }) => (
+              <div className="px-4 py-2">
+                <img
+                  key={key}
+                  className="mx-auto w-full xs:max-w-[100px] md:max-w-[150px]"
+                  src={image}
+                  alt={name}
+                />
+              </div>
+            ))}
+          </div>
+          {/* END INTITUTIONS LIST */}
+        </div>
+      </section>
+      {/* END MARCAS */}
       {/* SOCIAL MEDIA */}
       <section className="align-center flex items-center justify-center bg-gray-200 py-8 xs:gap-0 md:gap-4">
         <SocialMedia color="fill-black" />

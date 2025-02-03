@@ -1,6 +1,6 @@
 export default function Quote({ name, bg }) {
   return (
-    <section className="bg-gray-200">
+    <section className="bg-white">
       <div
         className={`${bg} relative w-full bg-cover bg-no-repeat py-20 text-center md:py-40 lg:py-60`}
         style={{

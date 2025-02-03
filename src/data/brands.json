@@ -1,0 +1,172 @@
+[
+  {
+    "key": 1,
+    "name": "Cocacola",
+    "image": "/images/marcas/slot01/Accenture.png"
+  },
+  {
+    "key": 2,
+    "name": "Antolin",
+    "image": "/images/marcas/slot01/Antolin.png"
+  },
+  {
+    "key": 3,
+    "name": "Astrazeneca",
+    "image": "/images/marcas/slot01/Astrazeneca.png"
+  },
+  {
+    "key": 4,
+    "name": "Bioderma",
+    "image": "/images/marcas/slot01/Bioderma.png"
+  },
+  {
+    "key": 5,
+    "name": "Caixabank",
+    "image": "/images/marcas/slot01/Caixabank.png"
+  },
+  {
+    "key": 6,
+    "name": "Cocacola",
+    "image": "/images/marcas/slot01/Cocacola.png"
+  },
+  {
+    "key": 7,
+    "name": "Cofares",
+    "image": "/images/marcas/slot01/Cofares.png"
+  },
+  {
+    "key": 8,
+    "name": "Cosentino",
+    "image": "/images/marcas/slot01/Cosentino.png"
+  },
+  {
+    "key": 9,
+    "name": "Deloitte",
+    "image": "/images/marcas/slot01/Deloitte.png"
+  },
+  {
+    "key": 10,
+    "name": "Enagas",
+    "image": "/images/marcas/slot01/Enagas.png"
+  },
+  {
+    "key": 11,
+    "name": "Engie",
+    "image": "/images/marcas/slot01/Engie.png"
+  },
+  {
+    "key": 12,
+    "name": "Estrella-Damm",
+    "image": "/images/marcas/slot01/Estrella-Damm.png"
+  },
+  {
+    "key": 13,
+    "name": "Evax",
+    "image": "/images/marcas/slot01/Evax.png"
+  },
+  {
+    "key": 14,
+    "name": "Farma",
+    "image": "/images/marcas/slot01/Farma.png"
+  },
+  {
+    "key": 15,
+    "name": "HP",
+    "image": "/images/marcas/slot01/HP.png"
+  },
+  {
+    "key": 16,
+    "name": "Huawei",
+    "image": "/images/marcas/slot01/Huawei.png"
+  },
+  {
+    "key": 17,
+    "name": "Iberdrola",
+    "image": "/images/marcas/slot01/Iberdrola.png"
+  },
+  {
+    "key": 18,
+    "name": "Iberia",
+    "image": "/images/marcas/slot01/Iberia.png"
+  },
+  {
+    "key": 19,
+    "name": "IDIS",
+    "image": "/images/marcas/slot01/IDIS.png"
+  },
+  {
+    "key": 20,
+    "name": "Indra",
+    "image": "/images/marcas/slot01/Indra.png"
+  },
+  {
+    "key": 21,
+    "name": "LinkedIn",
+    "image": "/images/marcas/slot01/LinkedIn.png"
+  },
+  {
+    "key": 22,
+    "name": "Mapfre",
+    "image": "/images/marcas/slot01/Mapfre.png"
+  },
+  {
+    "key": 23,
+    "name": "Mercadona",
+    "image": "/images/marcas/slot01/Mercadona.png"
+  },
+  {
+    "key": 24,
+    "name": "Mercedes-Benz",
+    "image": "/images/marcas/slot01/Mercedes-Benz.png"
+  },
+  {
+    "key": 25,
+    "name": "Merck",
+    "image": "/images/marcas/slot01/Merck.png"
+  },
+  {
+    "key": 26,
+    "name": "Meta",
+    "image": "/images/marcas/slot01/Meta.png"
+  },
+  {
+    "key": 27,
+    "name": "Metro",
+    "image": "/images/marcas/slot01/Metro.png"
+  },
+  {
+    "key": 28,
+    "name": "Natura-Bisse",
+    "image": "/images/marcas/slot01/Natura-Bisse.png"
+  },
+  {
+    "key": 29,
+    "name": "Naturgy",
+    "image": "/images/marcas/slot01/Naturgy.png"
+  },
+  {
+    "key": 30,
+    "name": "Orange",
+    "image": "/images/marcas/slot01/Orange.png"
+  },
+  {
+    "key": 31,
+    "name": "Orange-Fundacion",
+    "image": "/images/marcas/slot01/Orange-Fundacion.png"
+  },
+  {
+    "key": 32,
+    "name": "Pfizer",
+    "image": "/images/marcas/slot01/Pfizer.png"
+  },
+  {
+    "key": 33,
+    "name": "Sabadell",
+    "image": "/images/marcas/slot01/Sabadell.png"
+  },
+  {
+    "key": 34,
+    "name": "Santander",
+    "image": "/images/marcas/slot01/Santander.png"
+  }
+]

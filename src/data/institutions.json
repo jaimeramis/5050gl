@@ -1,0 +1,77 @@
+[
+  {
+    "key": 1,
+    "name": "Alianza-STEAM",
+    "image": "/images/marcas/slot02/Alianza-STEAM.png"
+  },
+  {
+    "key": 2,
+    "name": "Ayuntamiento-Malaga",
+    "image": "/images/marcas/slot02/Ayuntamiento-Malaga.png"
+  },
+  {
+    "key": 3,
+    "name": "CEDDD",
+    "image": "/images/marcas/slot02/CEDDD.png"
+  },
+  {
+    "key": 4,
+    "name": "CEOE",
+    "image": "/images/marcas/slot02/CEOE.png"
+  },
+  {
+    "key": 5,
+    "name": "CEOE-Campus",
+    "image": "/images/marcas/slot02/CEOE-Campus.png"
+  },
+  {
+    "key": 6,
+    "name": "CEOE-Fundacion",
+    "image": "/images/marcas/slot02/CEOE-Fundacion.png"
+  },
+  {
+    "key": 7,
+    "name": "CG",
+    "image": "/images/marcas/slot02/CG.png"
+  },
+  {
+    "key": 8,
+    "name": "Comunidad-de-Madrid",
+    "image": "/images/marcas/slot02/Comunidad-de-Madrid.png"
+  },
+  {
+    "key": 9,
+    "name": "EOI",
+    "image": "/images/marcas/slot02/EOI.png"
+  },
+  {
+    "key": 10,
+    "name": "IEU2",
+    "image": "/images/marcas/slot02/IEU2.png"
+  },
+  {
+    "key": 11,
+    "name": "Junta-Andalucia",
+    "image": "/images/marcas/slot02/Junta-Andalucia.png"
+  },
+  {
+    "key": 12,
+    "name": "Madrid",
+    "image": "/images/marcas/slot02/Madrid.png"
+  },
+  {
+    "key": 13,
+    "name": "Mujer-e-Internacionalizacion",
+    "image": "/images/marcas/slot02/Mujer-e-Internacionalizacion.png"
+  },
+  {
+    "key": 14,
+    "name": "Once",
+    "image": "/images/marcas/slot02/Once.png"
+  },
+  {
+    "key": 15,
+    "name": "Santander-Ciudad",
+    "image": "/images/marcas/slot02/Santander-Ciudad.png"
+  }
+]
