@@ -59,7 +59,7 @@ export default function Contacto() {
       const body = encodeURIComponent(
         `Nombre: ${formData.nombre}\nEmail: ${formData.email}\nMensaje: ${formData.mensaje}`,
       );
-      const mailtoLink = `mailto:jrjramis984@gmail.com?subject=${subject}&body=${body}`; // Aquí se cambia la dirección de correo.
+      const mailtoLink = `mailto:secretaria@5050gl.com?subject=${subject}&body=${body}`; // Aquí se cambia la dirección de correo.
 
       // Redirigir el usuario al correo
       window.location.href = mailtoLink;

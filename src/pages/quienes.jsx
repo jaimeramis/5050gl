@@ -118,7 +118,7 @@ export default function Quienes() {
                 {/* ESPACIADO */}
                 <div className="py-0 transition-[padding] duration-500 ease-in-out group-hover:py-[8rem]"></div>
                 {/* END ESPACIADO */}
-                <div className="xs:text-md opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100 lg:text-lg">
+                <div className="xs:text-md opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100 lg:text-[1rem]">
                   <p>{description}</p>
                 </div>
               </div>
