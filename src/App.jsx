@@ -43,7 +43,7 @@ export default function App() {
         {Object.values(routes).map(({ key, href, component }) => {
           const Component = componentsMap[component];
           if (!Component) {
-            console.error(`Componente NAVEGACION no encontrado: ${component}`);
+            console.error(`Componente NAVEGACIÓN no encontrado: ${component}`);
             return null;
           }
           return <Route key={key} path={href} element={<Component />} />;

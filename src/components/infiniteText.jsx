@@ -12,12 +12,11 @@ export default function InfiniteText() {
   return (
     <section className="relative w-full overflow-hidden bg-gl-purple py-10 text-white md:py-16">
       <div className="whitespace-nowrap xs:animate-scrollMobile md:animate-scroll">
-        {Array.from({ length: count }).map((index) => (
-          // Mapear cada frase dentro del count de repeticiones:
-          <div key={index} className="inline-block">
-            {phrases.map((phrase) => (
+        {Array.from({ length: count }).map((_, repeatIndex) => (
+          <div key={`${repeatIndex}`} className="inline-block">
+            {phrases.map((phrase, phraseIndex) => (
               <h2
-                key={`${index}`}
+                key={`phrase-${repeatIndex}-${phraseIndex}-${phrase}`}
                 className="mx-6 inline-block uppercase xs:text-2xl md:text-3xl"
               >
                 {phrase}

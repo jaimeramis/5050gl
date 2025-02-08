@@ -12,7 +12,7 @@ export default function Quote({ name, bg }) {
         <div className="absolute inset-0 bg-gl-pink opacity-80"></div>
         {/* END OVERLAY */}
         <div className="relative z-40 px-4">
-          <h2 className="mx-auto w-full uppercase text-white text-shadow-sm xs:text-2xl md:text-4xl lg:w-[60%] lg:text-6xl">
+          <h2 className="mx-auto w-full uppercase !leading-tight text-white text-shadow-sm xs:text-2xl md:text-4xl lg:w-[60%] lg:text-6xl">
             {name}
           </h2>
         </div>

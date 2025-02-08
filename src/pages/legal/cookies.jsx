@@ -142,169 +142,169 @@ export default function Cookies() {
               3. <strong>¿Qué tipos de cookies utiliza esta página web?</strong>
             </li>
           </ol>
-          <div class="overflow-x-auto">
-            <table class="min-w-full table-auto border-collapse border border-gray-300">
+          <div className="overflow-x-auto">
+            <table className="min-w-full table-auto border-collapse border border-gray-300">
               <thead>
                 <tr>
                   <td
                     colspan="4"
-                    class="border border-gray-300 p-1 text-sm font-semibold"
+                    className="border border-gray-300 p-1 text-sm font-semibold"
                   >
                     <strong>Cookies de terceros</strong>
                   </td>
                 </tr>
-                <tr class="bg-gray-100">
+                <tr className="bg-gray-100">
                   <td class="border border-gray-300 p-1 text-xs sm:text-sm">
                     Cookie
                   </td>
-                  <td class="border border-gray-300 p-1 text-xs sm:text-sm">
+                  <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     Tipo
                   </td>
-                  <td class="border border-gray-300 p-1 text-xs sm:text-sm">
+                  <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     Finalidad
                   </td>
-                  <td class="border border-gray-300 p-1 text-xs sm:text-sm">
+                  <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     Caducidad
                   </td>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td class="border border-gray-300 p-1 text-xs sm:text-sm">
+                  <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     _ga
                   </td>
-                  <td class="border border-gray-300 p-1 text-xs sm:text-sm">
+                  <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     Cookie de análisis - Google Analytics
                   </td>
-                  <td class="border border-gray-300 p-1 text-xs sm:text-sm">
+                  <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     Se usa para controlar a los visitantes únicos de la web,
                     almacena un identificador de cliente único.
                   </td>
-                  <td class="border border-gray-300 p-1 text-xs sm:text-sm">
+                  <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     2 años
                   </td>
                 </tr>
-                <tr class="bg-gray-100">
-                  <td class="border border-gray-300 p-1 text-xs sm:text-sm">
+                <tr className="bg-gray-100">
+                  <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     _gid
                   </td>
-                  <td class="border border-gray-300 p-1 text-xs sm:text-sm">
+                  <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     Cookie de análisis - Google Analytics
                   </td>
-                  <td class="border border-gray-300 p-1 text-xs sm:text-sm">
+                  <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     Se usa para distinguir a los usuarios.
                   </td>
-                  <td class="border border-gray-300 p-1 text-xs sm:text-sm">
+                  <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     24 horas
                   </td>
                 </tr>
                 <tr>
-                  <td class="border border-gray-300 p-1 text-xs sm:text-sm">
+                  <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     _gat
                   </td>
-                  <td class="border border-gray-300 p-1 text-xs sm:text-sm">
+                  <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     Cookie de análisis - Google Analytics
                   </td>
-                  <td class="border border-gray-300 p-1 text-xs sm:text-sm">
+                  <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     Se usa para limitar el porcentaje de solicitudes.
                   </td>
-                  <td class="border border-gray-300 p-1 text-xs sm:text-sm">
+                  <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     1 minuto
                   </td>
                 </tr>
-                <tr class="bg-gray-100">
+                <tr className="bg-gray-100">
                   <td class="border border-gray-300 p-1 text-xs sm:text-sm">
                     _utma
                   </td>
-                  <td class="border border-gray-300 p-1 text-xs sm:text-sm">
+                  <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     Cookie de análisis - Google Analytics
                   </td>
-                  <td class="border border-gray-300 p-1 text-xs sm:text-sm">
+                  <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     Se usa para distinguir usuarios y sesiones
                   </td>
-                  <td class="border border-gray-300 p-1 text-xs sm:text-sm">
+                  <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     2 años
                   </td>
                 </tr>
                 <tr>
-                  <td class="border border-gray-300 p-1 text-xs sm:text-sm">
+                  <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     _utmb
                   </td>
-                  <td class="border border-gray-300 p-1 text-xs sm:text-sm">
+                  <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     Cookie de análisis - Google Analytics
                   </td>
-                  <td class="border border-gray-300 p-1 text-xs sm:text-sm">
+                  <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     Toma una marca de tiempo del momento exacto en que el
                     visitante ingresa en el sitio
                   </td>
-                  <td class="border border-gray-300 p-1 text-xs sm:text-sm">
+                  <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     30 min
                   </td>
                 </tr>
-                <tr class="bg-gray-100">
+                <tr className="bg-gray-100">
                   <td class="border border-gray-300 p-1 text-xs sm:text-sm">
                     _utmc
                   </td>
-                  <td class="border border-gray-300 p-1 text-xs sm:text-sm">
+                  <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     Cookie de análisis - Google Analytics
                   </td>
-                  <td class="border border-gray-300 p-1 text-xs sm:text-sm">
+                  <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     Toma una marca de tiempo del momento exacto en el momento en
                     que un visitante abandona el sitio
                   </td>
-                  <td class="border border-gray-300 p-1 text-xs sm:text-sm">
+                  <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     Fin de la sesión del navegador
                   </td>
                 </tr>
                 <tr>
-                  <td class="border border-gray-300 p-1 text-xs sm:text-sm">
+                  <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     _utmz
                   </td>
-                  <td class="border border-gray-300 p-1 text-xs sm:text-sm">
+                  <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     Cookie de análisis - Google Analytics
                   </td>
-                  <td class="border border-gray-300 p-1 text-xs sm:text-sm">
+                  <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     Almacena la fuente de tráfico o la campaña que explica cómo
                     ha llegado el usuario al sitio
                   </td>
-                  <td class="border border-gray-300 p-1 text-xs sm:text-sm">
+                  <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     1 hora
                   </td>
                 </tr>
                 <tr>
                   <td
                     colspan="4"
-                    class="border border-gray-300 p-1 font-semibold"
+                    className="border border-gray-300 p-1 font-semibold"
                   >
                     <strong>Cookies propias</strong>
                   </td>
                 </tr>
-                <tr class="bg-gray-100">
-                  <td class="border border-gray-300 p-1 text-xs sm:text-sm">
+                <tr className="bg-gray-100">
+                  <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     Cookie
                   </td>
-                  <td class="border border-gray-300 p-1 text-xs sm:text-sm">
+                  <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     Tipo
                   </td>
-                  <td class="border border-gray-300 p-1 text-xs sm:text-sm">
+                  <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     Finalidad
                   </td>
-                  <td class="border border-gray-300 p-1 text-xs sm:text-sm">
+                  <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     Caducidad
                   </td>
                 </tr>
                 <tr>
-                  <td class="border border-gray-300 p-1 text-xs sm:text-sm">
+                  <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     moove_gdpr_popup
                   </td>
-                  <td class="border border-gray-300 p-1 text-xs sm:text-sm">
+                  <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     Cookie técnica
                   </td>
-                  <td class="border border-gray-300 p-1 text-xs sm:text-sm">
+                  <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     Cookie de gestión de la política de cookies por parte del
                     usuario de la web.
                   </td>
-                  <td class="border border-gray-300 p-1 text-xs sm:text-sm">
+                  <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     Persistente
                   </td>
                 </tr>
