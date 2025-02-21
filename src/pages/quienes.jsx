@@ -31,8 +31,8 @@ export default function Quienes() {
               <p className="pb-4">
                 Gloria Lomana es presidenta del Consejo Asesor de Forbes Women,
                 embajadora de la red española del G20 EMPOWER, miembro de
-                International Women's Forum, miembro del Consejo Asesor de la
-                Fundación Mujeres por África.
+                International Women&apos;s Forum, miembro del Consejo Asesor de
+                la Fundación Mujeres por África.
               </p>
               <p className="pb-4">
                 Elegida Top 100 Mujeres Líderes 2019, Premio Clara Campoamor del

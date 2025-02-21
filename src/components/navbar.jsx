@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import routes from "../data/navigation.json";
-import logo from "/images/logo.png";
+const logo = "/images/logo.png";
 
 export default function Navbar({ bg }) {
   const [isOpen, setIsOpen] = useState(false);

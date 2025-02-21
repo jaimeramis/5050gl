@@ -1,5 +1,5 @@
 //Importar Imágenes
-import video from "/images/video.jpg";
+const video = "/images/video.jpg";
 
 import Navbar from "../components/navbar";
 import Quote from "../components/quote";

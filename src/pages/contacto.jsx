@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 
@@ -77,7 +77,7 @@ export default function Contacto() {
       <Navbar bg="bg-black" />
       {/* PROMO */}
       <section className="flex items-center justify-center py-32">
-        <div className="flex w-full flex-col gap-16 px-4 xl:flex-row xl:p-32">
+        <div className="flex w-full flex-col px-4 sm:gap-0 md:gap-16 xl:flex-row xl:p-32">
           {/* COLUMN 1 */}
           <div className="h-auto w-full">
             <div className="pb-6">
@@ -103,7 +103,7 @@ export default function Contacto() {
             >
               {/* Nombre */}
               <input
-                className={`border-2 px-2 py-4 ${
+                className={`border-2 px-2 py-4 text-sm ${
                   errors.nombre ? "border-red-500" : "border-black"
                 }`}
                 type="text"
@@ -118,7 +118,7 @@ export default function Contacto() {
 
               {/* Email */}
               <input
-                className={`border-2 px-2 py-4 ${
+                className={`border-2 px-2 py-4 text-sm ${
                   errors.email ? "border-red-500" : "border-black"
                 }`}
                 type="email"
@@ -134,7 +134,7 @@ export default function Contacto() {
               <div className="flex w-full flex-col">
                 <textarea
                   maxLength="500"
-                  className={`h-full] resize-none overflow-auto border-2 px-2 py-4 ${
+                  className={`h-[8rem] resize-none overflow-auto border-2 px-2 py-4 text-sm ${
                     errors.mensaje ? "border-red-500" : "border-black"
                   }`}
                   name="mensaje"
