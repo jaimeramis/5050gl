@@ -118,29 +118,23 @@
     "image": "/images/quienes/asesores/asesor-17.jpg",
     "linkdin": "https://www.linkedin.com/in/miguel-%C3%A1ngel-navarro-barqu%C3%ADn-075309/"
   },
+
   {
     "key": 18,
-    "name": "Patricia Gabaldon",
-    "description": "Profesora de Entorno Económico en IE Business School",
-    "image": "/images/quienes/asesores/asesor-18.jpg",
-    "linkdin": "https://www.linkedin.com/in/patricia-gabaldon-83142b8/"
-  },
-  {
-    "key": 19,
     "name": "Pilar García de la Granja",
     "description": "Directora Adjunta General del Área Editorial y RR.II. de Henneo",
     "image": "/images/quienes/asesores/asesor-19.jpg",
     "linkdin": "https://www.linkedin.com/in/pilargarciadelagranja/"
   },
   {
-    "key": 20,
+    "key": 19,
     "name": "Teresa Millán",
     "description": "Directora Asuntos Corporativos de Eli Lilly and Company",
     "image": "/images/quienes/asesores/asesor-20.jpg",
     "linkdin": "https://www.linkedin.com/in/teresa-millan-7a350a17/"
   },
   {
-    "key": 21,
+    "key": 20,
     "name": "Trinidad Jiménez",
     "description": "Directora estratégica y AA.PP de Telefónica. Ex Ministra de Asuntos Exteriores",
     "image": "/images/quienes/asesores/asesor-21.jpg",

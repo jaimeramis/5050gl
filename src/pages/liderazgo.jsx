@@ -3,7 +3,8 @@ import { ChevronDown } from "lucide-react";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 
-const AccordionItem = ({ title, content }) => {
+const AccordionItem = (props) => {
+  const { title, content } = props;
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -15,7 +16,9 @@ const AccordionItem = ({ title, content }) => {
       >
         {title}
         <ChevronDown
-          className={`transition-transform duration-300 ${isOpen ? "rotate-180" : "rotate-0"} w-full max-w-[30px]`}
+          className={`transition-transform duration-300 ${
+            isOpen ? "rotate-180" : "rotate-0"
+          } w-full max-w-[30px]`}
         />
       </button>
       <div
@@ -38,27 +41,28 @@ export default function Liderazgo() {
         </h2>
       ),
       content: (
-        <>
-          <ul className="text-md list-disc pl-5">
-            <li className="pb-2">
-              En el mundo empresarial hay mujeres con altas competencias que es
-              preciso visibilizar para
-              <b>situar a la compañía en el ranking de buenas prácticas</b>.
-            </li>
-            <li className="pb-2">
-              <b>
-                La escucha de las mujeres acelera el camino a la igualdad y
-                genera referentes
-              </b>
-              para niñas y jóvenes en base a certidumbres de meritocracia,
-              superación y consecución de logros.
-            </li>
-            <li className="pb-2">
-              Apoyar estas políticas refuerza los liderazgos inclusivos, la
-              marca y la reputación.
-            </li>
-          </ul>
-        </>
+        <ul className="text-md list-disc pl-5">
+          <li className="pb-2">
+            En el mundo empresarial hay mujeres con altas competencias que es
+            preciso visibilizar para
+            <strong>
+              situar a la compañía en el ranking de buenas prácticas
+            </strong>
+            .
+          </li>
+          <li className="pb-2">
+            <strong>
+              La escucha de las mujeres acelera el camino a la igualdad y genera
+              referentes
+            </strong>
+            para niñas y jóvenes en base a certidumbres de meritocracia,
+            superación y consecución de logros.
+          </li>
+          <li className="pb-2">
+            Apoyar estas políticas refuerza los liderazgos inclusivos, la marca
+            y la reputación.
+          </li>
+        </ul>
       ),
     },
     {
@@ -68,25 +72,24 @@ export default function Liderazgo() {
         </h2>
       ),
       content: (
-        <>
-          <ul className="text-md list-disc pl-5">
-            <li className="pb-2">
-              En 50&50 GL generamos acciones en torno a la
-              <b>
-                comunicación para visibilizar el trabajo de las mujeres líderes
-              </b>
-              , reforzando su networking y conexión en red.
-            </li>
-            <li className="pb-2">
-              Asimismo, <b>posicionamos mujeres referentes para inspirar</b> a
-              otras empresas y generar confianza en las líderes del futuro.
-            </li>
-            <li className="pb-2">
-              Adaptamos acciones encaminadas a la visibilidad de liderazgos
-              femeninos.
-            </li>
-          </ul>
-        </>
+        <ul className="text-md list-disc pl-5">
+          <li className="pb-2">
+            En 50&50 GL generamos acciones en torno a la
+            <strong>
+              comunicación para visibilizar el trabajo de las mujeres líderes
+            </strong>
+            , reforzando su networking y conexión en red.
+          </li>
+          <li className="pb-2">
+            Asimismo,
+            <strong>posicionamos mujeres referentes para inspirar</strong> a
+            otras empresas y generar confianza en las líderes del futuro.
+          </li>
+          <li className="pb-2">
+            Adaptamos acciones encaminadas a la visibilidad de liderazgos
+            femeninos.
+          </li>
+        </ul>
       ),
     },
     {
@@ -96,29 +99,27 @@ export default function Liderazgo() {
         </h2>
       ),
       content: (
-        <>
-          <ul className="text-md list-disc pl-5">
-            <li className="pb-2">
-              Analizamos el mercado, y en concreto el sector, y su potencial
-              desarrollo inclusivo, responsable, sostenible y ético de futuro.
-            </li>
-            <li className="pb-2">
-              <b>Medimos el potencial propio a desarrollar</b> en línea con el
-              ODS 5 de Igualdad y el conjunto de ODS con especial atención al
-              bienestar de las Personas, las Sostenibilidad del Planeta, las
-              Alianzas e las Instituciones.
-            </li>
-            <li className="pb-2">
-              Recomendamos actuaciones individualizadas según contexto propio y
-              ajeno.
-            </li>
-            <li className="pb-2">
-              Con la más avanzada tecnología,
-              <b>trabajamos para evitar intrusiones</b>
-              ajenas que pudieran mermar el potencial de tu empresa o liderazgo.
-            </li>
-          </ul>
-        </>
+        <ul className="text-md list-disc pl-5">
+          <li className="pb-2">
+            Analizamos el mercado, y en concreto el sector, y su potencial
+            desarrollo inclusivo, responsable, sostenible y ético de futuro.
+          </li>
+          <li className="pb-2">
+            <strong>Medimos el potencial propio a desarrollar</strong> en línea
+            con el ODS 5 de Igualdad y el conjunto de ODS con especial atención
+            al bienestar de las Personas, la Sostenibilidad del Planeta, las
+            Alianzas e las Instituciones.
+          </li>
+          <li className="pb-2">
+            Recomendamos actuaciones individualizadas según contexto propio y
+            ajeno.
+          </li>
+          <li className="pb-2">
+            Con la más avanzada tecnología,
+            <strong>trabajamos para evitar intrusiones</strong>
+            ajenas que pudieran mermar el potencial de tu empresa o liderazgo.
+          </li>
+        </ul>
       ),
     },
   ];
@@ -128,7 +129,6 @@ export default function Liderazgo() {
       <Navbar />
       {/* CABECERA */}
       <section className="relative flex h-screen flex-col items-center justify-center bg-cabecera-liderazgo bg-cover bg-bottom bg-no-repeat text-center text-white sm:h-[56rem] md:h-screen hd:h-[60rem] supra:h-screen">
-        {/* OVERLAY */}
         <div className="absolute inset-0 bg-gl-sky opacity-80"></div>
 
         <h1

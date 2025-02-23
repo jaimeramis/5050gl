@@ -57,4 +57,12 @@
   h2 {
     font-family: "Baskerville-Regular", serif;
   }
+
+  .a-hidden {
+    display: none;
+  }
+
+  .a-show {
+    display: block;
+  }
 }

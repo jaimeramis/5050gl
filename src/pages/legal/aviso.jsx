@@ -49,8 +49,8 @@ export default function Aviso() {
           <p className="pb-4">
             La navegación por el referido sitio web es absolutamente voluntaria
             y supone la aceptación plena por quien accede a los mismos, en
-            adelante "usuario", de todas las condiciones de uso vigentes en cada
-            momento que se encuentren en la presente dirección.
+            adelante &quot;usuario&quot;, de todas las condiciones de uso
+            vigentes en cada momento que se encuentren en la presente dirección.
           </p>
           <p className="pb-4">
             50&amp;50GL se reserva el derecho a realizar cambios en la página
@@ -74,9 +74,9 @@ export default function Aviso() {
               <a href="http://www.5050gl.com/">www.5050gl.com</a>
             </span>
             <span>&nbsp;</span>proporciona al usuario el acceso a información y
-            servicios (los "contenidos") pertenecientes a 50&amp;50GL. El acceso
-            a estos contenidos es libre y no requiere de la creación de una
-            cuenta de usuario registrado.
+            servicios (los &quot;contenidos&quot;) pertenecientes a 50&amp;50GL.
+            El acceso a estos contenidos es libre y no requiere de la creación
+            de una cuenta de usuario registrado.
           </p>
 
           <p className="pb-4">

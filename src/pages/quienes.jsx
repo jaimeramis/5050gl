@@ -98,7 +98,7 @@ export default function Quienes() {
           ({ key, title, description, bg, image }) => (
             <div
               key={key}
-              className="group relative h-[28rem] cursor-pointer overflow-hidden text-white xs:w-[100%] md:w-[50%] xl:w-[20%]"
+              className="group relative cursor-pointer overflow-hidden text-white xs:h-[20rem] xs:w-[100%] md:h-[28rem] md:w-[50%] xl:w-[20%]"
             >
               <img
                 src={image}
@@ -116,7 +116,7 @@ export default function Quienes() {
                   <h3>{title}</h3>
                 </div>
                 {/* ESPACIADO */}
-                <div className="py-0 transition-[padding] duration-500 ease-in-out group-hover:py-[8rem]"></div>
+                <div className="py-0 transition-[padding] duration-500 ease-in-out xs:group-hover:py-[4rem] md:group-hover:py-[8rem]"></div>
                 {/* END ESPACIADO */}
                 <div className="xs:text-md opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100 lg:text-[1rem]">
                   <p>{description}</p>

@@ -16,127 +16,79 @@ export default function Cookies() {
           </ol>
           <p>
             Las cookies son archivos que se pueden descargar en su equipo al
-            acceder a determinadas páginas web. Son herramientas que tienen un
-            papel esencial para la prestación de numerosos servicios de la
-            sociedad de la información. Entre otros, permiten a una página web
-            almacenar y recuperar información sobre los hábitos de navegación de
-            un usuario o de su equipo y, dependiendo de la información obtenida,
-            se pueden utilizar para reconocer al usuario y mejorar el servicio
-            ofrecido.
+            acceder a determinadas páginas web. Son herramientas esenciales para
+            la prestación de numerosos servicios de la sociedad de la
+            información. Entre otros, permiten a una página web almacenar y
+            recuperar información sobre los hábitos de navegación de un usuario
+            o de su equipo y, dependiendo de la información obtenida, se pueden
+            utilizar para reconocer al usuario y mejorar el servicio ofrecido.
           </p>
-          <p>&nbsp;</p>
+
           <ol>
-            <li className="pb-4">
+            <li className="pb-4 pt-4">
               2. <strong>Tipología de cookies</strong>
             </li>
           </ol>
+
           <p className="pb-4">
             <u>Según la entidad que las gestione</u>:
           </p>
           <ul>
             <li className="pb-4">
-              Cookies<span>&nbsp;</span>
-              <strong>propias</strong>: son aquéllas que se envían al equipo
-              terminal del usuario desde un equipo o dominio gestionado por el
-              propio editor y desde el que se presta el servicio solicitado por
-              el usuario.
+              <strong>Cookies propias:</strong> son aquellas que se envían al
+              equipo terminal del usuario desde un equipo o dominio gestionado
+              por el propio editor y desde el que se presta el servicio
+              solicitado por el usuario.
             </li>
             <li className="pb-4">
-              Cookies<span>&nbsp;</span>
-              <strong>de terceros</strong>: son aquéllas que se envían al equipo
-              terminal del usuario desde un equipo o dominio que no es
+              <strong>Cookies de terceros:</strong> son aquellas que se envían
+              al equipo terminal del usuario desde un equipo o dominio que no es
               gestionado por el editor, sino por otra entidad que trata los
-              datos obtenidos través de las cookies.
+              datos obtenidos a través de las cookies.
             </li>
           </ul>
-          <p>&nbsp;</p>
+
           <p className="pb-4">
             <u>Según el plazo de tiempo que permanezcan activadas</u>:
           </p>
           <ul>
             <li className="pb-4">
-              Cookies<span>&nbsp;</span>
-              <strong>de sesión</strong>: son un tipo de cookies diseñadas para
-              recabar y almacenar datos mientras el usuario accede a una página
-              web. Se suelen emplear para almacenar información que solo
-              interesa conservar para la prestación del servicio solicitado por
-              el usuario en una sola ocasión (como, por ejemplo, una lista de
-              productos adquiridos).
+              <strong>Cookies de sesión:</strong> diseñadas para recabar y
+              almacenar datos mientras el usuario accede a una página web.
             </li>
             <li className="pb-4">
-              Cookies<span>&nbsp;</span>
-              <strong>persistentes</strong>: son un tipo de cookies en las que
-              los datos siguen almacenados en el terminal y pueden ser accedidos
-              y tratados durante un periodo definido por el responsable de la
-              cookie, que puede ir de unos minutos a varios años.
+              <strong>Cookies persistentes:</strong> los datos siguen
+              almacenados en el terminal y pueden ser accedidos y tratados
+              durante un periodo definido por el responsable de la cookie.
             </li>
           </ul>
-          <p>&nbsp;</p>
+
           <p className="pb-4">
             <u>Según su finalidad</u>:
           </p>
           <ul>
             <li className="pb-4">
-              Cookies<span>&nbsp;</span>
-              <strong>técnicas</strong>: son aquellas que permiten al usuario la
-              navegación a través de una página web, plataforma o aplicación y
-              la utilización de las diferentes opciones o servicios que en ella
-              existan como, por ejemplo, controlar el tráfico y la comunicación
-              de datos, identificar la sesión, acceder a partes de acceso
-              restringido, recordar los elementos que integran un pedido,
-              realizar el proceso de compra de un pedido, realizar la solicitud
-              de inscripción o participación en un evento, utilizar elementos de
-              seguridad durante la navegación, almacenar contenidos para la
-              difusión de vídeos o sonido o compartir contenidos a través de
-              redes sociales.
+              <strong>Cookies técnicas:</strong> permiten la navegación y el uso
+              de diferentes servicios de la web.
             </li>
             <li className="pb-4">
-              Cookies<span>&nbsp;</span>
-              <strong>de personalización</strong>: son aquellas que permiten al
-              usuario acceder al servicio con algunas características de
-              carácter general como, por ejemplo, serian el idioma, el tipo de
-              navegador a través del cual accede al servicio, la configuración
-              regional desde donde accede al servicio, etc.
+              <strong>Cookies de personalización:</strong> permiten al usuario
+              acceder con características personalizadas.
             </li>
             <li className="pb-4">
-              Cookies<span>&nbsp;</span>
-              <strong>de análisis</strong>: son aquellas que permiten al
-              responsable de las mismas el seguimiento y análisis del
-              comportamiento de los usuarios de los sitios web a los que están
-              vinculadas. La información recogida mediante este tipo de cookies
-              se utiliza en la medición de la actividad de los sitios web,
-              aplicación o plataforma y para la elaboración de perfiles de
-              navegación de los usuarios de dichos sitios, aplicaciones y
-              plataformas, con el fin de introducir mejoras en función de la
-              utilización que hacen los usuarios del servicio ofrecido.
+              <strong>Cookies de análisis:</strong> permiten el seguimiento y
+              análisis del comportamiento de los usuarios.
             </li>
             <li className="pb-4">
-              Cookies<span>&nbsp;</span>
-              <strong>publicitarias</strong>: son aquellas que permiten la
-              gestión de la forma más eficaz posible, de los espacios
-              publicitarios.
+              <strong>Cookies publicitarias:</strong> gestionan la publicidad de
+              manera eficiente.
             </li>
             <li className="pb-4">
-              Cookies<span>&nbsp;</span>
-              <strong>de publicidad comportamental</strong>: son aquellas que
-              almacenan información del comportamiento de los usuarios obtenida
-              a través de la observación continuada de sus hábitos de
-              navegación, lo que permite desarrollar un perfil específico para
-              mostrar publicidad en función del mismo.
-            </li>
-            <li className="pb-4">
-              Cookies<span>&nbsp;</span>
-              <strong>de redes sociales externas</strong>: son aquellas que se
-              utilizan para que los visitantes puedan interactuar con el
-              contenido de diferentes plataformas sociales (Facebook, YouTube,
-              Twitter, LinkedIn, etc.) y que se generen únicamente para los
-              usuarios de dichas redes sociales. Las condiciones de utilización
-              de estas cookies y la información recopilada se regulan por la
-              política de privacidad de la plataforma social correspondiente.
+              <strong>Cookies de redes sociales externas:</strong> permiten la
+              interacción con redes sociales.
             </li>
           </ul>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
+
           <ol>
             <li className="pb-4">
               3. <strong>¿Qué tipos de cookies utiliza esta página web?</strong>
@@ -147,14 +99,14 @@ export default function Cookies() {
               <thead>
                 <tr>
                   <td
-                    colspan="4"
+                    colSpan="4"
                     className="border border-gray-300 p-1 text-sm font-semibold"
                   >
                     <strong>Cookies de terceros</strong>
                   </td>
                 </tr>
                 <tr className="bg-gray-100">
-                  <td class="border border-gray-300 p-1 text-xs sm:text-sm">
+                  <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     Cookie
                   </td>
                   <td className="border border-gray-300 p-1 text-xs sm:text-sm">
@@ -213,14 +165,14 @@ export default function Cookies() {
                   </td>
                 </tr>
                 <tr className="bg-gray-100">
-                  <td class="border border-gray-300 p-1 text-xs sm:text-sm">
+                  <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     _utma
                   </td>
                   <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     Cookie de análisis - Google Analytics
                   </td>
                   <td className="border border-gray-300 p-1 text-xs sm:text-sm">
-                    Se usa para distinguir usuarios y sesiones
+                    Se usa para distinguir usuarios y sesiones.
                   </td>
                   <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     2 años
@@ -235,14 +187,14 @@ export default function Cookies() {
                   </td>
                   <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     Toma una marca de tiempo del momento exacto en que el
-                    visitante ingresa en el sitio
+                    visitante ingresa en el sitio.
                   </td>
                   <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     30 min
                   </td>
                 </tr>
                 <tr className="bg-gray-100">
-                  <td class="border border-gray-300 p-1 text-xs sm:text-sm">
+                  <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     _utmc
                   </td>
                   <td className="border border-gray-300 p-1 text-xs sm:text-sm">
@@ -250,7 +202,7 @@ export default function Cookies() {
                   </td>
                   <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     Toma una marca de tiempo del momento exacto en el momento en
-                    que un visitante abandona el sitio
+                    que un visitante abandona el sitio.
                   </td>
                   <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     Fin de la sesión del navegador
@@ -265,7 +217,7 @@ export default function Cookies() {
                   </td>
                   <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     Almacena la fuente de tráfico o la campaña que explica cómo
-                    ha llegado el usuario al sitio
+                    ha llegado el usuario al sitio.
                   </td>
                   <td className="border border-gray-300 p-1 text-xs sm:text-sm">
                     1 hora
@@ -273,7 +225,7 @@ export default function Cookies() {
                 </tr>
                 <tr>
                   <td
-                    colspan="4"
+                    colSpan="4"
                     className="border border-gray-300 p-1 font-semibold"
                   >
                     <strong>Cookies propias</strong>
@@ -312,18 +264,17 @@ export default function Cookies() {
             </table>
           </div>
 
-          <p>&nbsp;</p>
           <ol>
-            <li className="pb-4">
+            <li className="pb-4 pt-4">
               4. <strong>Panel de configuración de cookies</strong>
             </li>
           </ol>
           <p>Cookies técnicas si / no</p>
           <p>Cookies analíticas si / no</p>
-          <p>&nbsp;</p>
+
           <ol>
-            <li className="pb-4">
-              5.{" "}
+            <li className="pb-4 pt-4">
+              5.
               <strong>
                 Gestionar las cookies mediante la configuración del navegador
               </strong>
@@ -341,7 +292,7 @@ export default function Cookies() {
               pulse <u>aquí</u>
             </a>
             <br />
-            Para más información sobre cookies en Mozilla Firefox&nbsp;
+            Para más información sobre cookies en Mozilla Firefox
             <span>
               <a href="https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias">
                 pulse <u>aquí</u>
@@ -350,7 +301,6 @@ export default function Cookies() {
             .<br />
             Para más información sobre cookies en Internet Explorer
             <span>
-              &nbsp;
               <a
                 href="http://windows.microsoft.com/es-es/internet-explorer/delete-manage-cookies#ie=ie-11"
                 data-et-has-event-already="true"
@@ -361,7 +311,6 @@ export default function Cookies() {
             .<br />
             Para más información sobre cookies en Safari
             <span>
-              &nbsp;
               <a href="https://support.apple.com/kb/PH19214?locale=es_ES">
                 pulse <u>aquí</u>
               </a>
@@ -369,7 +318,6 @@ export default function Cookies() {
             .<br />
             <span>Para más información sobre cookies en Opera</span>
             <span>
-              &nbsp;
               <a href="https://support.apple.com/kb/PH19214?locale=es_ES">
                 pulse <u>aquí</u>
               </a>
@@ -377,14 +325,13 @@ export default function Cookies() {
             </span>
             <span>Para más información sobre cookies en Android</span>
             <span>
-              &nbsp;
               <a href="https://support.apple.com/kb/PH19214?locale=es_ES">
                 pulse <u>aquí</u>
               </a>
               .
             </span>
           </p>
-          <p>&nbsp;</p>
+
           <p>
             Además, también puede gestionar el almacén de cookies en su
             navegador a través de herramientas como las siguientes:
@@ -393,19 +340,19 @@ export default function Cookies() {
             <li>
               Ghostery:
               <span>
-                &nbsp;<a href="http://www.ghostery.com/">www.ghostery.com</a>
+                <a href="http://www.ghostery.com/">www.ghostery.com</a>
               </span>
             </li>
             <li>
-              Your online choices:<span>&nbsp;</span>
+              Your online choices:
               <a href="http://www.youronlinechoices.com/es">
                 <span>www.youronlinechoices.com/</span>es
               </a>
             </li>
           </ul>
-          <p>&nbsp;</p>
+
           <ol>
-            <li className="pb-4">
+            <li className="pb-4 pt-4">
               6. <strong>Actualización de la política de cookies.</strong>
             </li>
           </ol>
@@ -416,9 +363,8 @@ export default function Cookies() {
             que compruebe de forma regular su contenido.
           </p>
           <p>
-            <strong>&nbsp;</strong>
+            <strong></strong>
           </p>
-          <p>&nbsp;</p>
         </div>
       </section>
       <Footer />
