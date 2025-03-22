@@ -7,9 +7,6 @@ import ScrollToTop from "./components/scrollTop";
 import Home from "./pages/home";
 import Quienes from "./pages/quienes";
 import Liderazgo from "./pages/liderazgo";
-import Chicas from "./pages/chicas";
-import Women from "./pages/women";
-import Noticias from "./pages/noticias";
 import Contacto from "./pages/contacto";
 
 //PÁGINAS LEGALES:
@@ -22,9 +19,6 @@ export default function App() {
   const componentsMap = {
     Quienes,
     Liderazgo,
-    Chicas,
-    Women,
-    Noticias,
     Contacto,
   };
 

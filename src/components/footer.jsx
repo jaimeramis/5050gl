@@ -12,11 +12,13 @@ export default function Footer() {
           <div className="grid grid-cols-1 justify-center gap-10 sm:gap-6 md:grid-cols-3">
             {/* LOGO */}
             <div className="mx-auto">
-              <img
-                className="w-full max-w-56 sm:max-w-[220px]"
-                src={logo}
-                alt="Logo 50&50gl"
-              />
+              <Link key="0" to="/">
+                <img
+                  className="w-full max-w-56 sm:max-w-[220px]"
+                  src={logo}
+                  alt="Logo 50&50gl"
+                />
+              </Link>
             </div>
             {/* END LOGO */}
             {/* ENLACES */}
